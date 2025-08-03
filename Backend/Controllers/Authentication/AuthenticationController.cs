@@ -18,25 +18,25 @@ namespace bankApI.Controllers
             Response.Cookies.Append("accessToken", tokens.AccessToken, new CookieOptions
             {
                 HttpOnly = true,
-                SameSite = SameSiteMode.Lax,
+                SameSite = SameSiteMode.None,
                 Secure = false,
-                Expires = DateTimeOffset.UtcNow.AddMinutes(1000)
+                Expires = DateTimeOffset.UtcNow.AddMinutes(50)
             });
 
             Response.Cookies.Append("refreshToken", tokens.RefreshToken, new CookieOptions
             {
                 HttpOnly = true,
-                SameSite = SameSiteMode.Lax,
+                SameSite = SameSiteMode.None,
                 Secure = false,
-                Expires = DateTimeOffset.UtcNow.AddDays(20)
+                Expires = DateTimeOffset.UtcNow.AddDays(30)
             });
 
             Response.Cookies.Append("CSRF", GenerateKeys.GenerateId(), new CookieOptions
             {
                 HttpOnly = false,
-                SameSite = SameSiteMode.Lax,
+                SameSite = SameSiteMode.None,
                 Secure = false,
-                Expires = DateTimeOffset.UtcNow.AddDays(20)
+                Expires = DateTimeOffset.UtcNow.AddDays(30)
             });
         }
 
