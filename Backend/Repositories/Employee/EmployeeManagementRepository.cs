@@ -239,7 +239,7 @@ namespace bankApI.Repositories.EmployeeRepositories
                 RoleTypeId = employee.TypeId,
                 TypeId = employee.TypeId,
                 IsActive = false,
-                salary = employee.salary
+               
             };
 
             await _db.Employees.AddAsync(Employee);
