@@ -63,7 +63,7 @@ namespace bankApI.Repositories.EmployeeRepositories
                    new BusinessLayer.Dto_s.EmployeeDto_s.AccountDto
                    {
                        Account = c.Person!.EmployeeAccount!.Account,
-                       Salary = c.Person!.Employee!.salary,
+                     
                        IsFrozen = c.Person.EmployeeAccount.IsFrozen,
                        CreatedAt = c.Person.Employee.CreatedAt
 
