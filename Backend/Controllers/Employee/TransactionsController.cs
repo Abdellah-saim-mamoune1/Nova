@@ -17,6 +17,8 @@ namespace bankApI.Controllers.Employee
             if (PageNumber<=0||PageSize<=0)
                 return BadRequest("Invalid pieces of information.");
 
+
+
             var response = await _TransactionsService.GetTransactionsHistoryPaginatedAsync(PageNumber,PageSize);
 
             return Ok(response.Data);
@@ -34,11 +36,14 @@ namespace bankApI.Controllers.Employee
         }
 
 
-        [HttpPost("deposit/")]
-        public async Task<IActionResult> Deposit(DepositWithdrawDto form)
+        [HttpPost("deposit/{CSRF_Token}")]
+        public async Task<IActionResult> Deposit(DepositWithdrawDto form, string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
 
             var response = await _TransactionsService.Deposit(form);
             if (response.Status == 500)
@@ -48,11 +53,14 @@ namespace bankApI.Controllers.Employee
         }
 
 
-        [HttpPost("withdraw/")]
-        public async Task<IActionResult> Withdraw(DepositWithdrawDto form)
+        [HttpPost("withdraw/{CSRF_Token}")]
+        public async Task<IActionResult> Withdraw(DepositWithdrawDto form, string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
 
             var response = await _TransactionsService.Withdraw(form);
             if (response.Status == 500)
