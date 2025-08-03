@@ -65,7 +65,7 @@ namespace bankApI.Repositories.EmployeeRepositories
                        Account = c.Person!.EmployeeAccount!.Account,
                      
                        IsFrozen = c.Person.EmployeeAccount.IsFrozen,
-                       CreatedAt = c.Person.Employee.CreatedAt
+                       CreatedAt = c.Person.Employee!.CreatedAt
 
                    },
                     PersonalEmail = c.Person.Email,
