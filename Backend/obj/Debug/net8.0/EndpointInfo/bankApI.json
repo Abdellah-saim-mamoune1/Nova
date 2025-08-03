@@ -1154,10 +1154,6 @@
       "EmployeeDto": {
         "type": "object",
         "properties": {
-          "salary": {
-            "type": "number",
-            "format": "double"
-          },
           "typeId": {
             "type": "integer",
             "format": "int32"

@@ -107,12 +107,15 @@ namespace bankApI.Controllers.EmployeeController
 
 
         [HttpPut("{CSRF_Token}")]
-        public async Task<IActionResult> UpdateEmployeeAsync( EmployeeUpdateDto form,string CSRF_Token)
+        public async Task<IActionResult> UpdateEmployeeAsync([FromBody] EmployeeUpdateDto form,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+
+            var e = Request.Cookies["CSRF"];
+            Console.WriteLine("e: " + e + "CSRF "+CSRF_Token) ;
+            if (e != CSRF_Token)
                 return Unauthorized();
 
             var response = await _EmployeeManagementService.UpdateEmployeeAsync(form);

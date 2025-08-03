@@ -4,7 +4,6 @@
     {
 
         public string Account { get; set; } = string.Empty;
-        public double Salary { get; set; }
         public bool IsFrozen { get; set; }
         public DateOnly CreatedAt { get; set; }
 

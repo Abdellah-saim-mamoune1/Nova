@@ -94,9 +94,8 @@ namespace bankApI.Repositories.EmployeeRepositories
                 new BusinessLayer.Dto_s.EmployeeDto_s.AccountDto
                 {
                     Account = c.Person!.EmployeeAccount!.Account,
-                    Salary = c.Person.Employee!.salary,
                     IsFrozen = c.Person.EmployeeAccount.IsFrozen,
-                    CreatedAt = c.Person.Employee.CreatedAt
+                    CreatedAt = c.Person.Employee!.CreatedAt
                 },
 
               PersonalEmail = c.Person.Email,
@@ -133,6 +132,9 @@ namespace bankApI.Repositories.EmployeeRepositories
                     Employee.Person.Email = EmployeeInfo.personalEmail;
                     Employee.Person.Employee!.TypeId = Type.Id;
                     Employee.Person.Gender = EmployeeInfo.Gender;
+                    Employee.Account = EmployeeInfo.FirstName.Trim().Replace(" ","").ToLower()
+                    +"."+ EmployeeInfo.LastName.Trim().Replace(" ", "").ToLower() + "@Nova.com";
+
                     await _db.SaveChangesAsync();
 
                     await transaction.CommitAsync();

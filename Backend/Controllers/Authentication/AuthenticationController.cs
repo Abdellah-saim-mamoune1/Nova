@@ -19,7 +19,7 @@ namespace bankApI.Controllers
             {
                 HttpOnly = true,
                 SameSite = SameSiteMode.None,
-                Secure = false,
+                Secure = true,
                 Expires = DateTimeOffset.UtcNow.AddMinutes(50)
             });
 
@@ -27,17 +27,19 @@ namespace bankApI.Controllers
             {
                 HttpOnly = true,
                 SameSite = SameSiteMode.None,
-                Secure = false,
+                Secure = true,
                 Expires = DateTimeOffset.UtcNow.AddDays(30)
             });
-
-            Response.Cookies.Append("CSRF", GenerateKeys.GenerateId(), new CookieOptions
+            var CSRF = GenerateKeys.GenerateId();
+            Response.Cookies.Append("CSRF", CSRF, new CookieOptions
             {
                 HttpOnly = false,
                 SameSite = SameSiteMode.None,
-                Secure = false,
+                Secure = true,
                 Expires = DateTimeOffset.UtcNow.AddDays(30)
             });
+
+            Console.WriteLine("CSRF: " + CSRF);
         }
 
 

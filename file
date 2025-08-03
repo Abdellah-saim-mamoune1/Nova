@@ -1,0 +1,102 @@
+[33mcommit a6ec2783da5cdcae5e2df8d1cf1b4d45d7bb86e4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 23:27:56 2025 +0200
+
+    removing salary attribute
+
+[33mcommit 31105da5337c59d7f8e290cbd85ab7f1fc99f314[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Abdellah-saim-mamoune1 <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 23:26:34 2025 +0200
+
+    Update EmployeeManagementRepository.cs
+
+[33mcommit 9895d8df4d8e090a4e4c85026d2e8938137157e0[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 23:18:20 2025 +0200
+
+    removing salary
+
+[33mcommit 82d080c68fdedbe501c4d4cd0536f7ab3410fdcb[m
+Merge: 25f6848 97546c8
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 23:12:36 2025 +0200
+
+    merging with github repo
+
+[33mcommit 97546c8b1a670d20fd3dc499eb2c970f7ed42ccb[m
+Author: Abdellah-saim-mamoune1 <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:59:02 2025 +0200
+
+    Delete Backend/Models/ClientXEmployeeModels directory
+
+[33mcommit 44852aea5678ac0dca9980d6dd700e117534cd62[m
+Author: Abdellah-saim-mamoune1 <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:58:26 2025 +0200
+
+    Delete Backend/Models/ClientManagement directory
+
+[33mcommit 96d5fbd8e5d1cbccdde26ffb71272a25a588f2c7[m
+Author: Abdellah-saim-mamoune1 <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:57:50 2025 +0200
+
+    Delete Backend/Controllers/EmployeeController directory
+
+[33mcommit c8e2f2374febfcddfa9b6068e7c29781846069d2[m
+Author: Abdellah-saim-mamoune1 <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:57:23 2025 +0200
+
+    Delete Backend/Controllers/ClientController directory
+
+[33mcommit 0d29ce0eeca4eca2fcac5087240c342519740b2a[m
+Author: Abdellah-saim-mamoune1 <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:56:58 2025 +0200
+
+    Delete Backend/BusinessLayer directory
+
+[33mcommit 25f6848185a845127057323476de5bd96428dd9c[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:39:16 2025 +0200
+
+    deleting old files
+
+[33mcommit cf5d0c88fe58267f49402950d495998be129cc3c[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:32:44 2025 +0200
+
+    deleting business layer
+
+[33mcommit 820ef3760948fe2f457490bfd9345a118d3ed64c[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:30:22 2025 +0200
+
+    Setting CSRF validatoin
+
+[33mcommit a196b4ff9d4ce798d7fef6c7c5731d7f95e9d674[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:29:44 2025 +0200
+
+    Setting CSRF validation
+
+[33mcommit 3271df7a199d35cd991eec115013a21dc240326d[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:28:55 2025 +0200
+
+    Setting CSRF validation
+
+[33mcommit f8537a3a7caa447b03dfd20ea7e980935fc4ec55[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:27:30 2025 +0200
+
+    Setting CSRF validation
+
+[33mcommit c9515433a093738cce920a5eff5f4397d74227d4[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 22:25:59 2025 +0200
+
+    Setting CSRF token
+
+[33mcommit e8a824ac3ade80d77ec6e41e6e038a6289b2c5aa[m
+Author: Abdellah saim mamoune <abdellahsaimmamoune1@gmail.com>
+Date:   Sun Aug 3 20:56:22 2025 +0200
+
+    initial commit

@@ -101,7 +101,7 @@ namespace bankApI.Services.EmployeeServices
 
         private async Task<EmployeeAccount?> ValidateAccountExistenceAsync(string Account)
         {
-            return await Context.EmployeeAccount.Include(e => e.Person).FirstOrDefaultAsync(e => e.Account == Account);
+            return await Context.EmployeeAccount.Include(e => e.Person).ThenInclude(e=>e!.Employee).FirstOrDefaultAsync(e => e.Account == Account);
         }
 
 

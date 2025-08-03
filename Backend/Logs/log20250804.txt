@@ -1,0 +1,641 @@
+2025-08-04 00:00:33.923 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 72
+2025-08-04 00:00:33.967 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:00:33.971 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:00:34.003 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:00:34.112 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:00:43.125 +02:00 [INF] Executed DbCommand (361ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountAddress], [a].[Balance], [a].[CardId], [a].[CreatedAt], [a].[IsFrozen], [a].[PassWord], [a].[PersonId], [a].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime]
+FROM [Accounts] AS [a]
+INNER JOIN [Tokens] AS [t] ON [a].[TokenId] = [t].[Id]
+WHERE [a].[AccountAddress] = @__request_Email_0
+2025-08-04 00:00:43.264 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-08-04 00:00:43.289 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 9160.6611ms
+2025-08-04 00:00:43.294 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:00:43.335 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 401 null text/plain; charset=utf-8 9412.2585ms
+2025-08-04 00:00:45.499 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 74
+2025-08-04 00:00:45.513 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:00:45.520 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:00:45.526 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:00:45.538 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:00:45.657 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountAddress], [a].[Balance], [a].[CardId], [a].[CreatedAt], [a].[IsFrozen], [a].[PassWord], [a].[PersonId], [a].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime]
+FROM [Accounts] AS [a]
+INNER JOIN [Tokens] AS [t] ON [a].[TokenId] = [t].[Id]
+WHERE [a].[AccountAddress] = @__request_Email_0
+2025-08-04 00:00:45.710 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-08-04 00:00:45.717 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 170.5087ms
+2025-08-04 00:00:45.721 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:00:45.726 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 401 null text/plain; charset=utf-8 227.3592ms
+2025-08-04 00:00:58.017 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-04 00:00:58.032 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:00:58.034 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:00:58.042 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:00:58.045 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:00:58.522 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:01:00.093 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-04 00:01:00.199 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-04 00:01:00.404 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-04 00:01:00.475 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:01:00.479 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 2428.9564ms
+2025-08-04 00:01:00.488 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:01:00.492 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 2475.1745ms
+2025-08-04 00:01:41.805 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5157/api/employee/N7A3L6TNHPB5NVF1 - application/json 277
+2025-08-04 00:01:41.824 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:01:41.831 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:01:41.850 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:01:41.868 +02:00 [INF] Route matched with {action = "UpdateEmployee", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateEmployeeAsync(bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeUpdateDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:01:42.030 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__Account_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+WHERE [e].[Account] = @__Account_0
+2025-08-04 00:01:42.171 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@__EmployeeInfo_type_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Type]
+FROM [EmployeeType] AS [e]
+WHERE [e].[Type] = @__EmployeeInfo_type_0
+2025-08-04 00:04:29.260 +02:00 [INF] User profile is available. Using 'C:\Users\TADJ TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 00:04:29.829 +02:00 [INF] Now listening on: http://localhost:5157
+2025-08-04 00:04:30.665 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/index.html - null null
+2025-08-04 00:04:30.670 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 00:04:30.684 +02:00 [INF] Hosting environment: Development
+2025-08-04 00:04:30.685 +02:00 [INF] Content root path: C:\Users\TADJ TECH\Desktop\Nova\Backend
+2025-08-04 00:04:31.159 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 00:04:31.853 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/index.html - 200 null text/html;charset=utf-8 1231.2791ms
+2025-08-04 00:04:31.899 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_vs/browserLink - null null
+2025-08-04 00:04:31.918 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-04 00:04:31.928 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 9.7169ms
+2025-08-04 00:04:32.100 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_vs/browserLink - 200 null text/javascript; charset=UTF-8 208.0219ms
+2025-08-04 00:04:32.237 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - null null
+2025-08-04 00:04:32.363 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.1145ms
+2025-08-04 00:04:56.848 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-04 00:04:56.871 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:04:56.892 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:04:56.911 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:04:56.992 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:05:01.999 +02:00 [INF] Executed DbCommand (168ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:05:03.268 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-04 00:05:03.353 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-04 00:05:03.497 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-04 00:05:03.587 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:05:03.605 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 6596.7289ms
+2025-08-04 00:05:03.611 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:05:03.638 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 6790.2031ms
+2025-08-04 00:05:40.146 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5157/api/employee/4GSVIH25N0VIPHJ7 - application/json 277
+2025-08-04 00:05:40.241 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:05:40.243 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:05:40.264 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:05:40.286 +02:00 [INF] Route matched with {action = "UpdateEmployee", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateEmployeeAsync(bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeUpdateDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:05:40.598 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@__Account_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+WHERE [e].[Account] = @__Account_0
+2025-08-04 00:05:40.678 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__EmployeeInfo_type_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Type]
+FROM [EmployeeType] AS [e]
+WHERE [e].[Type] = @__EmployeeInfo_type_0
+2025-08-04 00:06:17.576 +02:00 [ERR] Error while updating employee.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at bankApI.Repositories.EmployeeRepositories.EmployeeManagementRepository.<>c__DisplayClass7_0.<<UpdateEmployeeAsync>b__0>d.MoveNext() in C:\Users\TADJ TECH\Desktop\Nova\Backend\Repositories\Employee\EmployeeManagementRepository.cs:line 134
+--- End of stack trace from previous location ---
+   at bankApI.Repositories.EmployeeRepositories.EmployeeManagementRepository.<>c__DisplayClass7_0.<<UpdateEmployeeAsync>b__0>d.MoveNext() in C:\Users\TADJ TECH\Desktop\Nova\Backend\Repositories\Employee\EmployeeManagementRepository.cs:line 138
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at bankApI.Repositories.EmployeeRepositories.EmployeeManagementRepository.UpdateEmployeeAsync(EmployeeAccount Employee, EmployeeUpdateDto EmployeeInfo) in C:\Users\TADJ TECH\Desktop\Nova\Backend\Repositories\Employee\EmployeeManagementRepository.cs:line 122
+2025-08-04 00:06:17.690 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-08-04 00:06:17.699 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI) in 37405.1872ms
+2025-08-04 00:06:17.706 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:06:17.711 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5157/api/employee/4GSVIH25N0VIPHJ7 - 500 null text/plain; charset=utf-8 37565.2332ms
+2025-08-04 00:10:25.624 +02:00 [INF] User profile is available. Using 'C:\Users\TADJ TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 00:10:26.166 +02:00 [INF] Now listening on: http://localhost:5157
+2025-08-04 00:10:26.505 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 00:10:26.675 +02:00 [INF] Hosting environment: Development
+2025-08-04 00:10:27.260 +02:00 [INF] Content root path: C:\Users\TADJ TECH\Desktop\Nova\Backend
+2025-08-04 00:10:27.263 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/index.html - null null
+2025-08-04 00:10:27.709 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 00:10:28.995 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/index.html - 200 null text/html;charset=utf-8 1760.0818ms
+2025-08-04 00:10:29.042 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-04 00:10:29.057 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_vs/browserLink - null null
+2025-08-04 00:10:29.065 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 24.888ms
+2025-08-04 00:10:29.365 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_vs/browserLink - 200 null text/javascript; charset=UTF-8 307.7086ms
+2025-08-04 00:10:29.577 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - null null
+2025-08-04 00:10:29.710 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.9557ms
+2025-08-04 00:10:55.000 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-04 00:10:55.056 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:10:55.063 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:10:55.086 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:10:55.251 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:11:02.321 +02:00 [INF] Executed DbCommand (185ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:11:03.753 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-04 00:11:03.893 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-04 00:11:04.127 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-04 00:11:04.198 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:11:04.226 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 8946.5859ms
+2025-08-04 00:11:04.230 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:11:04.271 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 9271.5885ms
+2025-08-04 00:11:32.546 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5157/api/employee/1AFB8INZFG3KLYCM - application/json 277
+2025-08-04 00:11:32.599 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:11:32.601 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:11:32.616 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:11:32.631 +02:00 [INF] Route matched with {action = "UpdateEmployee", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateEmployeeAsync(bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeUpdateDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:11:32.921 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[@__Account_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+WHERE [e].[Account] = @__Account_0
+2025-08-04 00:11:33.005 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__EmployeeInfo_type_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Type]
+FROM [EmployeeType] AS [e]
+WHERE [e].[Type] = @__EmployeeInfo_type_0
+2025-08-04 00:11:33.095 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Date), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Persons] SET [Address] = @p0, [BirthDate] = @p1, [LastName] = @p2, [PhoneNumber] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2025-08-04 00:11:33.160 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:11:33.163 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI) in 528.0136ms
+2025-08-04 00:11:33.167 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:11:33.170 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5157/api/employee/1AFB8INZFG3KLYCM - 200 null text/plain; charset=utf-8 623.5716ms
+2025-08-04 00:11:42.129 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-04 00:11:42.203 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:11:42.207 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:11:42.210 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:11:42.221 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:11:42.547 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:11:43.002 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-04 00:11:43.019 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-04 00:11:43.043 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-04 00:11:43.051 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:11:43.054 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 827.6156ms
+2025-08-04 00:11:43.059 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:11:43.064 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 933.9467ms
+2025-08-04 00:11:51.193 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 72
+2025-08-04 00:11:51.206 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:11:51.209 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:11:51.212 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:11:51.216 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:11:51.245 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:11:51.534 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-08-04 00:11:51.543 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 320.0562ms
+2025-08-04 00:11:51.549 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:11:51.562 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 401 null text/plain; charset=utf-8 368.6992ms
+2025-08-04 00:14:26.625 +02:00 [INF] User profile is available. Using 'C:\Users\TADJ TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 00:14:27.117 +02:00 [INF] Now listening on: http://localhost:5157
+2025-08-04 00:14:27.420 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-04 00:14:27.427 +02:00 [INF] Hosting environment: Development
+2025-08-04 00:14:27.455 +02:00 [INF] Content root path: C:\Users\TADJ TECH\Desktop\Nova\Backend
+2025-08-04 00:14:27.995 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/index.html - null null
+2025-08-04 00:14:28.626 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-08-04 00:14:29.414 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/index.html - 200 null text/html;charset=utf-8 1449.3666ms
+2025-08-04 00:14:29.463 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_vs/browserLink - null null
+2025-08-04 00:14:29.478 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-04 00:14:29.491 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 12.8999ms
+2025-08-04 00:14:29.577 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.9121ms
+2025-08-04 00:14:29.823 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - null null
+2025-08-04 00:14:30.282 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 458.9517ms
+2025-08-04 00:14:54.696 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-04 00:14:54.772 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:14:54.781 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:14:54.798 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:14:54.916 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:15:00.969 +02:00 [INF] Executed DbCommand (184ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:15:02.410 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-04 00:15:02.511 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-04 00:15:02.676 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-04 00:15:02.794 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:15:02.825 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 7887.0561ms
+2025-08-04 00:15:02.832 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:15:02.858 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 8162.2192ms
+2025-08-04 00:15:29.746 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5157/api/employee/30UFCV9CI3GYMP01 - application/json 277
+2025-08-04 00:15:29.763 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:15:29.765 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:15:29.789 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:15:29.807 +02:00 [INF] Route matched with {action = "UpdateEmployee", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateEmployeeAsync(bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeUpdateDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:15:30.073 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@__Account_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+WHERE [e].[Account] = @__Account_0
+2025-08-04 00:15:30.156 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__EmployeeInfo_type_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Type]
+FROM [EmployeeType] AS [e]
+WHERE [e].[Type] = @__EmployeeInfo_type_0
+2025-08-04 00:15:30.208 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [EmployeeAccount] SET [Account] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-08-04 00:15:30.237 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:15:30.242 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI) in 427.7678ms
+2025-08-04 00:15:30.245 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.UpdateEmployeeAsync (bankApI)'
+2025-08-04 00:15:30.249 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5157/api/employee/30UFCV9CI3GYMP01 - 200 null text/plain; charset=utf-8 503.8229ms
+2025-08-04 00:15:41.115 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-04 00:15:41.147 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:15:41.157 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:15:41.168 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:15:41.172 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:15:41.469 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:15:41.482 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-08-04 00:15:41.486 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 304.8079ms
+2025-08-04 00:15:41.490 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:15:41.496 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 401 null text/plain; charset=utf-8 381.386ms
+2025-08-04 00:15:46.993 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 72
+2025-08-04 00:15:47.004 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:15:47.008 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:15:47.013 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:15:47.018 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-04 00:15:47.077 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-04 00:15:47.463 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-04 00:15:47.481 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-04 00:15:47.507 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-04 00:15:47.514 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:15:47.518 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 491.6319ms
+2025-08-04 00:15:47.523 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-04 00:15:47.526 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 533.4184ms
+2025-08-04 00:18:33.978 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/api/employee/employee-Info - null null
+2025-08-04 00:18:34.017 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.GetEmployeeInfo (bankApI)'
+2025-08-04 00:18:34.032 +02:00 [INF] Route matched with {action = "GetEmployeeInfo", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeeInfo() on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:18:34.253 +02:00 [INF] Executed DbCommand (78ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[FirstName], [p].[LastName], [e0].[Account], [e0].[IsFrozen], [e1].[CreatedAt], [p].[Email] AS [PersonalEmail], [p].[Address], [p].[BirthDate], [p].[PhoneNumber], [e2].[Type], [r].[Type] AS [RoleType], [e1].[IsActive]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [EmployeeAccount] AS [e0] ON [p].[Id] = [e0].[EmployeeId]
+LEFT JOIN [Employees] AS [e1] ON [p].[Id] = [e1].[PersonId]
+LEFT JOIN [EmployeeType] AS [e2] ON [e1].[TypeId] = [e2].[Id]
+LEFT JOIN [Roles] AS [r] ON [e1].[RoleTypeId] = [r].[Id]
+WHERE [e].[EmployeeId] = @__Id_0
+2025-08-04 00:18:34.272 +02:00 [INF] Executing OkObjectResult, writing value of type 'bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeGetDto'.
+2025-08-04 00:18:34.323 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.GetEmployeeInfo (bankApI) in 282.8985ms
+2025-08-04 00:18:34.329 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.GetEmployeeInfo (bankApI)'
+2025-08-04 00:18:34.334 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/api/employee/employee-Info - 200 null application/json; charset=utf-8 355.9945ms
+2025-08-04 00:18:48.627 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/api/employee/login-register/1,20 - null null
+2025-08-04 00:18:48.702 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.GetEmployeesLoginRegister (bankApI)'
+2025-08-04 00:18:48.720 +02:00 [INF] Route matched with {action = "GetEmployeesLoginRegister", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesLoginRegister(Int32, Int32) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:18:48.776 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-08-04 00:18:48.781 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-08-04 00:18:48.819 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Date], [l].[EmployeeId]
+FROM [LoginRegister] AS [l]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-08-04 00:18:48.917 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [LoginRegister] AS [l]
+2025-08-04 00:18:48.931 +02:00 [INF] Executing OkObjectResult, writing value of type 'bankApI.Dto_s.Employee.LoginRegisterHistoryGetPaginatedDto'.
+2025-08-04 00:18:48.954 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.GetEmployeesLoginRegister (bankApI) in 224.1127ms
+2025-08-04 00:18:48.961 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.GetEmployeesLoginRegister (bankApI)'
+2025-08-04 00:18:48.965 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/api/employee/login-register/1,20 - 200 null application/json; charset=utf-8 338.6916ms
+2025-08-04 00:19:43.013 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5157/api/employee/freeze-account/BZHSHBSX1ZXI1GY1 - application/json 74
+2025-08-04 00:19:43.094 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:19:43.097 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:19:43.104 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.FreezeUnfreezeEmployeeAccountAsync (bankApI)'
+2025-08-04 00:19:43.122 +02:00 [INF] Route matched with {action = "FreezeUnfreezeEmployeeAccount", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FreezeUnfreezeEmployeeAccountAsync(bankApI.BusinessLayer.Dto_s.SetEmailStateDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:19:43.196 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[@__Account_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+WHERE [e].[Account] = @__Account_0
+2025-08-04 00:19:43.224 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [EmployeeAccount] SET [IsFrozen] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-08-04 00:19:43.234 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:19:43.249 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.FreezeUnfreezeEmployeeAccountAsync (bankApI) in 121.4849ms
+2025-08-04 00:19:43.267 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.FreezeUnfreezeEmployeeAccountAsync (bankApI)'
+2025-08-04 00:19:43.282 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5157/api/employee/freeze-account/BZHSHBSX1ZXI1GY1 - 200 null text/plain; charset=utf-8 269.4741ms
+2025-08-04 00:20:05.675 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5157/api/employee/freeze-account/BZHSHBSX1ZXI1GY1 - application/json 71
+2025-08-04 00:20:05.740 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:20:05.744 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:20:05.756 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.FreezeUnfreezeEmployeeAccountAsync (bankApI)'
+2025-08-04 00:20:05.764 +02:00 [INF] Route matched with {action = "FreezeUnfreezeEmployeeAccount", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FreezeUnfreezeEmployeeAccountAsync(bankApI.BusinessLayer.Dto_s.SetEmailStateDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:20:05.805 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[@__Account_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+WHERE [e].[Account] = @__Account_0
+2025-08-04 00:20:05.889 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [EmployeeAccount] SET [IsFrozen] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-08-04 00:20:05.901 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:20:05.904 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.FreezeUnfreezeEmployeeAccountAsync (bankApI) in 130.863ms
+2025-08-04 00:20:05.908 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.FreezeUnfreezeEmployeeAccountAsync (bankApI)'
+2025-08-04 00:20:05.915 +02:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5157/api/employee/freeze-account/BZHSHBSX1ZXI1GY1 - 200 null text/plain; charset=utf-8 239.6534ms
+2025-08-04 00:20:57.177 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/employee/message/BZHSHBSX1ZXI1GY1 - application/json 113
+2025-08-04 00:20:57.191 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:20:57.192 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:20:57.196 +02:00 [INF] Executing endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.SendMessageToEmployee (bankApI)'
+2025-08-04 00:20:57.214 +02:00 [INF] Route matched with {action = "SendMessageToEmployee", controller = "EmployeeAdmin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendMessageToEmployee(bankApI.BusinessLayer.Dto_s.NotificationsDto, System.String) on controller bankApI.Controllers.EmployeeController.EmployeeAdminController (bankApI).
+2025-08-04 00:20:57.353 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[EmployeeId] = @__Id_0
+2025-08-04 00:20:57.403 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__Notification_Type_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[Id], [n].[Name]
+FROM [NotificationsTypes] AS [n]
+WHERE [n].[Id] = @__Notification_Type_0
+2025-08-04 00:20:57.518 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notifications] ([Body], [Title], [TypeId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-08-04 00:20:57.633 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [EmployeeNotifications] ([AccountId], [Isviewed], [NotificationId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0, @p1, @p2);
+2025-08-04 00:20:57.667 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:20:57.671 +02:00 [INF] Executed action bankApI.Controllers.EmployeeController.EmployeeAdminController.SendMessageToEmployee (bankApI) in 450.4199ms
+2025-08-04 00:20:57.675 +02:00 [INF] Executed endpoint 'bankApI.Controllers.EmployeeController.EmployeeAdminController.SendMessageToEmployee (bankApI)'
+2025-08-04 00:20:57.680 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/employee/message/BZHSHBSX1ZXI1GY1 - 200 null text/plain; charset=utf-8 503.9042ms
+2025-08-04 00:22:15.626 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/employee/client/transactions/deposit/BZHSHBSX1ZXI1GY1 - application/json 96
+2025-08-04 00:22:15.675 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:22:15.687 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:22:15.690 +02:00 [INF] Executing endpoint 'bankApI.Controllers.Employee.TransactionsController.Deposit (bankApI)'
+2025-08-04 00:22:15.705 +02:00 [INF] Route matched with {action = "Deposit", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Deposit(bankApI.BusinessLayer.Dto_s.EmployeeDto_s.DepositWithdrawDto, System.String) on controller bankApI.Controllers.Employee.TransactionsController (bankApI).
+2025-08-04 00:22:15.820 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@__form_ClientAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountAddress], [a].[Balance], [a].[CardId], [a].[CreatedAt], [a].[IsFrozen], [a].[PassWord], [a].[PersonId], [a].[TokenId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountAddress] = @__form_ClientAccount_0
+2025-08-04 00:22:16.024 +02:00 [INF] Executed DbCommand (59ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Double), @p2='?' (DbType = Int32), @p3='?' (DbType = Double), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+INSERT INTO [TransactionsHistory] ([AccountId], [Amount], [EmployeeAccountId], [TypeId])
+OUTPUT INSERTED.[Id], INSERTED.[CreatedAt]
+VALUES (@p2, @p3, @p4, @p5);
+2025-08-04 00:22:17.723 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'bankApI.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TransactionsHistory_EmployeeAccount_EmployeeAccountId". The conflict occurred in database "BankDb", table "dbo.EmployeeAccount", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:90215cc6-bf1d-4bd2-bc1d-51fde90a9330
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TransactionsHistory_EmployeeAccount_EmployeeAccountId". The conflict occurred in database "BankDb", table "dbo.EmployeeAccount", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:90215cc6-bf1d-4bd2-bc1d-51fde90a9330
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-08-04 00:22:18.774 +02:00 [ERR] Error while depositing.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_TransactionsHistory_EmployeeAccount_EmployeeAccountId". The conflict occurred in database "BankDb", table "dbo.EmployeeAccount", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:90215cc6-bf1d-4bd2-bc1d-51fde90a9330
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at bankApI.Repositories.Employee.TransactionsManagementRepository.<>c__DisplayClass10_0.<<Deposit>b__0>d.MoveNext() in C:\Users\TADJ TECH\Desktop\Nova\Backend\Repositories\Employee\TransactionsManagementRepository.cs:line 247
+--- End of stack trace from previous location ---
+   at bankApI.Repositories.Employee.TransactionsManagementRepository.<>c__DisplayClass10_0.<<Deposit>b__0>d.MoveNext() in C:\Users\TADJ TECH\Desktop\Nova\Backend\Repositories\Employee\TransactionsManagementRepository.cs:line 249
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at bankApI.Repositories.Employee.TransactionsManagementRepository.Deposit(DepositWithdrawDto form) in C:\Users\TADJ TECH\Desktop\Nova\Backend\Repositories\Employee\TransactionsManagementRepository.cs:line 232
+2025-08-04 00:22:18.882 +02:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-08-04 00:22:18.886 +02:00 [INF] Executed action bankApI.Controllers.Employee.TransactionsController.Deposit (bankApI) in 3176.6396ms
+2025-08-04 00:22:18.890 +02:00 [INF] Executed endpoint 'bankApI.Controllers.Employee.TransactionsController.Deposit (bankApI)'
+2025-08-04 00:22:18.893 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/employee/client/transactions/deposit/BZHSHBSX1ZXI1GY1 - 500 null text/plain; charset=utf-8 3267.0072ms
+2025-08-04 00:23:24.300 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/employee/client/transactions/deposit/BZHSHBSX1ZXI1GY1 - application/json 96
+2025-08-04 00:23:24.318 +02:00 [INF] CORS policy execution failed.
+2025-08-04 00:23:24.319 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-04 00:23:24.321 +02:00 [INF] Executing endpoint 'bankApI.Controllers.Employee.TransactionsController.Deposit (bankApI)'
+2025-08-04 00:23:24.323 +02:00 [INF] Route matched with {action = "Deposit", controller = "Transactions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Deposit(bankApI.BusinessLayer.Dto_s.EmployeeDto_s.DepositWithdrawDto, System.String) on controller bankApI.Controllers.Employee.TransactionsController (bankApI).
+2025-08-04 00:23:24.339 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__form_ClientAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccountAddress], [a].[Balance], [a].[CardId], [a].[CreatedAt], [a].[IsFrozen], [a].[PassWord], [a].[PersonId], [a].[TokenId]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountAddress] = @__form_ClientAccount_0
+2025-08-04 00:23:24.370 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Double), @p2='?' (DbType = Int32), @p3='?' (DbType = Double), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+INSERT INTO [TransactionsHistory] ([AccountId], [Amount], [EmployeeAccountId], [TypeId])
+OUTPUT INSERTED.[Id], INSERTED.[CreatedAt]
+VALUES (@p2, @p3, @p4, @p5);
+2025-08-04 00:23:24.437 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [BankRevenues] ([Amount], [Note], [RelatedTransactionId], [Source])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0, @p1, @p2, @p3);
+2025-08-04 00:23:24.446 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-04 00:23:24.452 +02:00 [INF] Executed action bankApI.Controllers.Employee.TransactionsController.Deposit (bankApI) in 126.0552ms
+2025-08-04 00:23:24.455 +02:00 [INF] Executed endpoint 'bankApI.Controllers.Employee.TransactionsController.Deposit (bankApI)'
+2025-08-04 00:23:24.457 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/employee/client/transactions/deposit/BZHSHBSX1ZXI1GY1 - 200 null text/plain; charset=utf-8 159.2455ms
