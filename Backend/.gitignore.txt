@@ -1,6 +1,3 @@
-# Ignore Visual Studio folder
-.vs/
-
-# Ignore build and temporary folders
+.vs
 bin/
 obj/
