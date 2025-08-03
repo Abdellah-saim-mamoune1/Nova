@@ -102,10 +102,20 @@
         }
       }
     },
-    "/api/employee/client": {
+    "/api/employee/client/{CSRF_Token}": {
       "post": {
         "tags": [
           "ClientAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -211,10 +221,20 @@
         }
       }
     },
-    "/api/employee/client/account": {
+    "/api/employee/client/account/{CSRF_Token}": {
       "post": {
         "tags": [
           "ClientAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -242,10 +262,20 @@
         }
       }
     },
-    "/api/employee/client/notification": {
+    "/api/employee/client/notification/{CSRF_Token}": {
       "post": {
         "tags": [
           "ClientAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -273,11 +303,21 @@
         }
       }
     },
-    "/api/employee/client/freeze-account": {
+    "/api/employee/client/freeze-account/{CSRF_Token}": {
       "put": {
         "tags": [
           "ClientAdmin"
         ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -304,10 +344,20 @@
         }
       }
     },
-    "/api/client/manage": {
+    "/api/client/manage/{CSRF_Token}": {
       "put": {
         "tags": [
           "ClientManagement"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -335,10 +385,20 @@
         }
       }
     },
-    "/api/client/manage/add-get-help-request": {
+    "/api/client/manage/add-get-help-request/{CSRF_Token}": {
       "post": {
         "tags": [
           "ClientManagement"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -457,10 +517,20 @@
         }
       }
     },
-    "/api/employee": {
+    "/api/employee/{CSRF_Token}": {
       "post": {
         "tags": [
           "EmployeeAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -490,6 +560,16 @@
       "put": {
         "tags": [
           "EmployeeAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -647,10 +727,20 @@
         }
       }
     },
-    "/api/employee/freeze-account": {
+    "/api/employee/freeze-account/{CSRF_Token}": {
       "put": {
         "tags": [
           "EmployeeAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -678,10 +768,20 @@
         }
       }
     },
-    "/api/employee/message": {
+    "/api/employee/message/{CSRF_Token}": {
       "post": {
         "tags": [
           "EmployeeAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -785,10 +885,20 @@
         }
       }
     },
-    "/api/employee/client/transactions/deposit": {
+    "/api/employee/client/transactions/deposit/{CSRF_Token}": {
       "post": {
         "tags": [
           "Transactions"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -816,10 +926,20 @@
         }
       }
     },
-    "/api/employee/client/transactions/withdraw": {
+    "/api/employee/client/transactions/withdraw/{CSRF_Token}": {
       "post": {
         "tags": [
           "Transactions"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -923,10 +1043,20 @@
         }
       }
     },
-    "/api/client/transactions/transfer-fund": {
+    "/api/client/transactions/transfer-fund/{CSRF_Token}": {
       "put": {
         "tags": [
           "TransactionsManagement"
+        ],
+        "parameters": [
+          {
+            "name": "CSRF_Token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {

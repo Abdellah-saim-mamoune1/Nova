@@ -25417,3 +25417,70 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2025-08-03 20:22:15.519 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_vs/browserLink - 200 null text/javascript; charset=UTF-8 230.5389ms
 2025-08-03 20:22:15.624 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - null null
 2025-08-03 20:22:15.715 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.787ms
+2025-08-03 22:22:34.645 +02:00 [INF] User profile is available. Using 'C:\Users\TADJ TECH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-03 22:22:35.546 +02:00 [INF] Now listening on: http://localhost:5157
+2025-08-03 22:22:35.868 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-03 22:22:35.911 +02:00 [INF] Hosting environment: Development
+2025-08-03 22:22:35.913 +02:00 [INF] Content root path: C:\Users\TADJ TECH\Desktop\Nova\Backend
+2025-08-03 22:22:39.168 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/index.html - null null
+2025-08-03 22:22:39.985 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-08-03 22:22:43.104 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/index.html - 200 null text/html;charset=utf-8 3980.5986ms
+2025-08-03 22:22:43.468 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_vs/browserLink - null null
+2025-08-03 22:22:43.611 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-03 22:22:43.897 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_framework/aspnetcore-browser-refresh.js - 200 16499 application/javascript; charset=utf-8 285.5765ms
+2025-08-03 22:22:44.040 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/_vs/browserLink - 200 null text/javascript; charset=UTF-8 579.727ms
+2025-08-03 22:22:45.100 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - null null
+2025-08-03 22:22:45.208 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5157/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.038ms
+2025-08-03 22:23:20.297 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 72
+2025-08-03 22:23:20.366 +02:00 [INF] CORS policy execution failed.
+2025-08-03 22:23:20.373 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-03 22:23:20.392 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-03 22:23:20.501 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-03 22:23:29.226 +02:00 [INF] Executed DbCommand (293ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-03 22:23:30.368 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-08-03 22:23:30.382 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 9870.0662ms
+2025-08-03 22:23:30.385 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-03 22:23:30.414 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 401 null text/plain; charset=utf-8 10116.5547ms
+2025-08-03 22:23:37.458 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5157/api/authentication/login - application/json 73
+2025-08-03 22:23:37.471 +02:00 [INF] CORS policy execution failed.
+2025-08-03 22:23:37.473 +02:00 [INF] Request origin http://localhost:5157 does not have permission to access the resource.
+2025-08-03 22:23:37.514 +02:00 [INF] Executing endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-03 22:23:37.525 +02:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto) on controller bankApI.Controllers.AuthenticationController (bankApI).
+2025-08-03 22:23:37.681 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[@__request_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId], [t].[Id], [t].[RefreshToken], [t].[RefreshTokenExpiryTime], [p].[Id], [p].[Address], [p].[BirthDate], [p].[Email], [p].[FirstName], [p].[Gender], [p].[LastName], [p].[PhoneNumber], [e0].[PersonId], [e0].[CreatedAt], [e0].[IsActive], [e0].[RoleTypeId], [e0].[TypeId], [e0].[salary], [e1].[Id], [e1].[Type]
+FROM [EmployeeAccount] AS [e]
+INNER JOIN [Tokens] AS [t] ON [e].[TokenId] = [t].[Id]
+INNER JOIN [Persons] AS [p] ON [e].[EmployeeId] = [p].[Id]
+LEFT JOIN [Employees] AS [e0] ON [p].[Id] = [e0].[PersonId]
+LEFT JOIN [EmployeeType] AS [e1] ON [e0].[TypeId] = [e1].[Id]
+WHERE [e].[Account] = @__request_Email_0
+2025-08-03 22:23:38.541 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tokens] SET [RefreshToken] = @p0, [RefreshTokenExpiryTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-08-03 22:23:38.654 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@__EmployeeAccount_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Account], [e].[EmployeeId], [e].[IsFrozen], [e].[Password], [e].[TokenId]
+FROM [EmployeeAccount] AS [e]
+WHERE [e].[Account] = @__EmployeeAccount_0
+2025-08-03 22:23:38.875 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LoginRegister] ([EmployeeId])
+OUTPUT INSERTED.[Id], INSERTED.[Date]
+VALUES (@p0);
+2025-08-03 22:23:38.959 +02:00 [WRN] The cookie 'accessToken' has set 'SameSite=None' and must also set 'Secure'.
+2025-08-03 22:23:38.967 +02:00 [WRN] The cookie 'refreshToken' has set 'SameSite=None' and must also set 'Secure'.
+2025-08-03 22:23:38.971 +02:00 [WRN] The cookie 'CSRF' has set 'SameSite=None' and must also set 'Secure'.
+2025-08-03 22:23:38.976 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-03 22:23:38.980 +02:00 [INF] Executed action bankApI.Controllers.AuthenticationController.Login (bankApI) in 1449.7606ms
+2025-08-03 22:23:38.985 +02:00 [INF] Executed endpoint 'bankApI.Controllers.AuthenticationController.Login (bankApI)'
+2025-08-03 22:23:38.989 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5157/api/authentication/login - 200 null text/plain; charset=utf-8 1530.5356ms

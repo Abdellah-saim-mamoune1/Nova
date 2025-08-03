@@ -21,11 +21,14 @@ namespace bankApI.Controllers.EmployeeController
     {
 
      
-        [HttpPost]
-        public async Task<IActionResult> AddEmployeeAsync(EmployeePersonDto employee)
+        [HttpPost("{CSRF_Token}")]
+        public async Task<IActionResult> AddEmployeeAsync(EmployeePersonDto employee,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
 
             var response = await _EmployeeManagementService.AddNewEmployeeAsync(employee);
             if (response.Status == 400)
@@ -103,11 +106,14 @@ namespace bankApI.Controllers.EmployeeController
         }
 
 
-        [HttpPut]
-        public async Task<IActionResult> UpdateEmployeeAsync( EmployeeUpdateDto form)
+        [HttpPut("{CSRF_Token}")]
+        public async Task<IActionResult> UpdateEmployeeAsync( EmployeeUpdateDto form,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
 
             var response = await _EmployeeManagementService.UpdateEmployeeAsync(form);
             if (response.Status == 400)
@@ -121,11 +127,15 @@ namespace bankApI.Controllers.EmployeeController
         }
 
 
-        [HttpPut("freeze-account/")]
-        public async Task<IActionResult> FreezeUnfreezeEmployeeAccountAsync(SetEmailStateDto state)
+        [HttpPut("freeze-account/{CSRF_Token}")]
+        public async Task<IActionResult> FreezeUnfreezeEmployeeAccountAsync(SetEmailStateDto state,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
+
 
             var response = await _EmployeeManagementService.FreezeUnfreezeEmployeeAccountAsync(state);
             if (response.Status==400)
@@ -137,11 +147,14 @@ namespace bankApI.Controllers.EmployeeController
             return Ok("Freezing process went successfully.");
         }
 
-        [HttpPost("message/")]
-        public async Task<IActionResult> SendMessageToEmployee(NotificationsDto form)
+        [HttpPost("message/{CSRF_Token}")]
+        public async Task<IActionResult> SendMessageToEmployee(NotificationsDto form,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
 
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
 
