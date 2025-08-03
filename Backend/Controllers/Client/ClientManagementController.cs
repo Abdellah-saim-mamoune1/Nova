@@ -19,11 +19,15 @@ namespace bankApI.Controllers.ClientController
         ) : ControllerBase
     {
 
-        [HttpPut]
-        public async Task<IActionResult> UpdateClientByIdAsync( UpdateClientDto client)
+        [HttpPut("{CSRF_Token}")]
+        public async Task<IActionResult> UpdateClientByIdAsync([FromBody] UpdateClientDto client,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
+                
 
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
 
@@ -38,11 +42,15 @@ namespace bankApI.Controllers.ClientController
         }
 
 
-        [HttpPost("add-get-help-request/")]
-        async public Task<IActionResult> AddGetHelpRequestAsync(NotificationsDto form)
+        [HttpPost("add-get-help-request/{CSRF_Token}")]
+        async public Task<IActionResult> AddGetHelpRequestAsync([FromBody] NotificationsDto form,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
+
 
             var response = await _ClientManagementService.AddGetHelpRequestAsync(form);
 
