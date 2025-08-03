@@ -1,0 +1,586 @@
+[
+  {
+    "ContainingType": "bankApI.Controllers.AuthenticationController",
+    "Method": "DeleteCookies",
+    "RelativePath": "api/authentication/DeleteCookies",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "bankApI.BusinessLayer.Dto_s.ClientXEmployeeDto_s.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.AuthenticationController",
+    "Method": "RefreshTokensAsync",
+    "RelativePath": "api/authentication/refresh-tokens/{Role}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientManagementController",
+    "Method": "UpdateClientByIdAsync",
+    "RelativePath": "api/client/manage",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "client",
+        "Type": "bankApI.BusinessLayer.Dto_s.UpdateClientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientManagementController",
+    "Method": "GetClientAccounts",
+    "RelativePath": "api/client/manage/accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientManagementController",
+    "Method": "AddGetHelpRequestAsync",
+    "RelativePath": "api/client/manage/add-get-help-request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.NotificationsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientManagementController",
+    "Method": "GetClientInfo",
+    "RelativePath": "api/client/manage/client-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientNotificationsController",
+    "Method": "GetClientNotifications",
+    "RelativePath": "api/client/notifications/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientNotificationsController",
+    "Method": "MarkAsViewed",
+    "RelativePath": "api/client/notifications/mark-as-viewed/{NotificationId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NotificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.ClientNotificationsController",
+    "Method": "GetClientNotificationsNonReadCount",
+    "RelativePath": "api/client/notifications/non-read-notifications-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.TransactionsManagementController",
+    "Method": "GetLastMonthTransactionHistory",
+    "RelativePath": "api/client/transactions/last-month-transactions-history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.TransactionsManagementController",
+    "Method": "GetTransactionHistory",
+    "RelativePath": "api/client/transactions/transactions-history/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.TransactionsManagementController",
+    "Method": "TransferFundAsync",
+    "RelativePath": "api/client/transactions/transfer-fund",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.ClientDto_s.DTransactionsHistory.TransferFundSetDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.ClientController.TransactionsManagementController",
+    "Method": "GetTransfersHistory",
+    "RelativePath": "api/client/transactions/transfers-history/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "AddEmployeeAsync",
+    "RelativePath": "api/employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "bankApI.BusinessLayer.Dto_s.EmployeePersonDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "UpdateEmployeeAsync",
+    "RelativePath": "api/employee",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.Employee.BankRevenueController",
+    "Method": "GetRevenueHistory",
+    "RelativePath": "api/employee/bank-revenue/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "AddNewClientAsync",
+    "RelativePath": "api/employee/client",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.PersonClientSetDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "AddNewAccountAsync",
+    "RelativePath": "api/employee/client/account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.BankEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "GetClientAccounts",
+    "RelativePath": "api/employee/client/accounts/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "GetClientInfo",
+    "RelativePath": "api/employee/client/client/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "GetAllClientsAsync",
+    "RelativePath": "api/employee/client/clients/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "FreezeUnfreezeClientAccountAsync",
+    "RelativePath": "api/employee/client/freeze-account",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.SetEmailStateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
+    "Method": "AddClientNotification",
+    "RelativePath": "api/employee/client/notification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.NotificationsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.Employee.TransactionsController",
+    "Method": "Deposit",
+    "RelativePath": "api/employee/client/transactions/deposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.EmployeeDto_s.DepositWithdrawDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.Employee.TransactionsController",
+    "Method": "GetTransactionsHistory",
+    "RelativePath": "api/employee/client/transactions/transactions-history/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.Employee.TransactionsController",
+    "Method": "GetTransfersHistory",
+    "RelativePath": "api/employee/client/transactions/transfers-history/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.Employee.TransactionsController",
+    "Method": "Withdraw",
+    "RelativePath": "api/employee/client/transactions/withdraw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.EmployeeDto_s.DepositWithdrawDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "GetEmployeeInfo",
+    "RelativePath": "api/employee/employee-Info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "GetAllEmployees",
+    "RelativePath": "api/employee/employees-Info/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "FreezeUnfreezeEmployeeAccountAsync",
+    "RelativePath": "api/employee/freeze-account",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "state",
+        "Type": "bankApI.BusinessLayer.Dto_s.SetEmailStateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "GetEmployeesLoginRegister",
+    "RelativePath": "api/employee/login-register/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "MarkAsViewed",
+    "RelativePath": "api/employee/mark-notification-as-viewed",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NotificationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "SendMessageToEmployee",
+    "RelativePath": "api/employee/message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "bankApI.BusinessLayer.Dto_s.NotificationsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/employee/notifications/{PageNumber},{PageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "bankApI.Controllers.EmployeeController.StatisticsController",
+    "Method": "GetGetDashBoardStatsAsync",
+    "RelativePath": "api/employee/statistics/dashboard-stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
