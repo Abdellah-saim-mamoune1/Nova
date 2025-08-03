@@ -49,11 +49,14 @@ namespace bankApI.Controllers.ClientController
         }
 
 
-        [HttpPut("transfer-fund/")]
-        async public Task<IActionResult> TransferFundAsync(TransferFundSetDto form)
+        [HttpPut("transfer-fund/{CSRF_Token}")]
+        async public Task<IActionResult> TransferFundAsync([FromBody] TransferFundSetDto form,string CSRF_Token)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            if (Request.Cookies["CSRF"] != CSRF_Token)
+                return Unauthorized();
 
             var Account = User.FindFirst(ClaimTypes.Email)!.Value;
             var result = await _Service.TransferFundAsync(form,Account);
