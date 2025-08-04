@@ -134,6 +134,8 @@ builder.Host.UseSerilog();
 
 var app = builder.Build();
 
+app.UseCors("AllowReactApp");
+
 app.UseHttpsRedirection();
 
 
@@ -151,8 +153,6 @@ app.Use(async (context, next) =>
 });
 
 
-
-app.UseCors("AllowReactApp");
 
 app.UseAuthentication(); 
 app.UseAuthorization();

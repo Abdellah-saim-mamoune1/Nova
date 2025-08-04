@@ -46,7 +46,8 @@ export const LoginPage = () => {
         {
           email: formData.email,
           password: formData.password,
-        }
+        },
+        { withCredentials: true }
       );
       localStorage.setItem("Account",formData.email);
      dispatch(SetAccount(formData.email));
