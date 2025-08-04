@@ -23,10 +23,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
-
-
             var response = await _ClientAdminService.AddNewClientAsync(form);
             if (response.Status == 500)
                 return StatusCode(500, "Internal server error.");
@@ -75,9 +71,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] !=Request.Headers["CSRF"])
-                return Unauthorized();
-
 
             var response = await _ClientAdminService.AddNewAccountAsync(form);
             if (response.Status == 500)
@@ -94,8 +87,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] !=Request.Headers["CSRF"])
-                return Unauthorized();
 
             var response = await _ClientAdminService.SendClientAccountMessage(form);
             if (response.Status == 500)
@@ -110,9 +101,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-
-            if (Request.Cookies["CSRF"]!= Request.Headers["CSRF"])
-                return Unauthorized();
 
             var response = await _ClientAdminService.FreezeClientAccountAsync(form);
 

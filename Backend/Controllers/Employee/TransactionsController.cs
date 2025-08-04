@@ -17,8 +17,6 @@ namespace bankApI.Controllers.Employee
             if (PageNumber<=0||PageSize<=0)
                 return BadRequest("Invalid pieces of information.");
 
-
-
             var response = await _TransactionsService.GetTransactionsHistoryPaginatedAsync(PageNumber,PageSize);
 
             return Ok(response.Data);
@@ -42,8 +40,6 @@ namespace bankApI.Controllers.Employee
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
 
             var response = await _TransactionsService.Deposit(form);
             if (response.Status == 500)
@@ -59,8 +55,6 @@ namespace bankApI.Controllers.Employee
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
 
             var response = await _TransactionsService.Withdraw(form);
             if (response.Status == 500)

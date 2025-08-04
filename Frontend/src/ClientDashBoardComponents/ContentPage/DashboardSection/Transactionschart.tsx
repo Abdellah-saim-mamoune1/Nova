@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
-import { ITransactionsHistory} from "../../Others/ClientInterfaces";
+import { ITransactionsHistory } from "../../Others/ClientInterfaces";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,7 +13,6 @@ import {
 } from "chart.js";
 import { LastMonthTransactionsHistoryGet } from "../../../features/Slices/Client_Infos_Slice";
 
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -25,43 +24,41 @@ ChartJS.register(
 );
 
 export function TransactionsChart() {
-  const [transactions,SetTransactions]=useState<ITransactionsHistory[]>([]);
-  
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(
-    window.matchMedia("(prefers-color-scheme: dark)").matches ||
-      document.documentElement.classList.contains("dark")
-  );
+  const [transactions, setTransactions] = useState<ITransactionsHistory[]>([]);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
-
-  useEffect(()=>{
-async function Get(){
-  var data=await LastMonthTransactionsHistoryGet(); 
-  console.log(data.totalPages);
-  if(data!==false)
-     SetTransactions(data);
-}
-Get()
-  },[])
-
-  if(transactions.length===0)
-    return ;
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    const handleChange = () => {
-      const isDark = document.documentElement.classList.contains("dark");
-      setIsDarkMode(isDark);
+  useEffect(() => {
+    const fetchTransactions = async () => {
+      const data = await LastMonthTransactionsHistoryGet();
+      if (data !== false) setTransactions(data);
     };
 
-    const observer = new MutationObserver(handleChange);
+    fetchTransactions();
+  }, []);
+
+  useEffect(() => {
+    const updateDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    };
+
+    updateDarkMode(); // Run on mount
+
+    const observer = new MutationObserver(updateDarkMode);
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["class"],
     });
 
-    mediaQuery.addEventListener("change", handleChange);
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addEventListener("change", updateDarkMode);
 
-   
- 
+    return () => {
+      observer.disconnect();
+      mediaQuery.removeEventListener("change", updateDarkMode);
+    };
+  }, []);
+
+  if (transactions.length === 0) return null;
 
   const textColor = isDarkMode ? "white" : "black";
   const gridColor = isDarkMode ? "#ffffff33" : "#00000022";
@@ -84,20 +81,16 @@ Get()
     )
   );
 
-  // Sum deposits per date
   const depositAmounts = formattedLabels.map((date) => {
-    const total = depositData
+    return depositData
       .filter((t) => new Date(t.createdAt).toISOString().split("T")[0] === date)
       .reduce((sum, t) => sum + t.amount, 0);
-    return total;
   });
 
-  // Sum withdrawals per date
   const withdrawAmounts = formattedLabels.map((date) => {
-    const total = withdrawData
+    return withdrawData
       .filter((t) => new Date(t.createdAt).toISOString().split("T")[0] === date)
       .reduce((sum, t) => sum + t.amount, 0);
-    return total;
   });
 
   const maxAmount = Math.max(
@@ -165,18 +158,15 @@ Get()
   };
 
   return (
-    <div className="w-full dark:bg-gray-800 p-5 bg-white rounded-lg  max-w-full">
-      
-        <h2 className={`text-xl font-bold mb-3 ${isDarkMode ? "text-white" : "text-black"}`}>
-          Deposit & Withdraw Trends
-        </h2>
-         <div className="overflow-x-auto ">
+    <div className="w-full dark:bg-gray-800 p-5 bg-white rounded-lg max-w-full">
+      <h2 className={`text-xl font-bold mb-3 ${isDarkMode ? "text-white" : "text-black"}`}>
+        Deposit & Withdraw Trends
+      </h2>
+      <div className="overflow-x-auto">
         <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
           <Line data={data} options={options} />
         </div>
-        </div>
-        </div>
-      
-    
+      </div>
+    </div>
   );
 }

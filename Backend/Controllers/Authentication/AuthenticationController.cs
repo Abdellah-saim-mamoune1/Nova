@@ -30,14 +30,6 @@ namespace bankApI.Controllers
                 Secure = true,
                 Expires = DateTimeOffset.UtcNow.AddDays(30)
             });
-            var CSRF = GenerateKeys.GenerateId();
-            Response.Cookies.Append("CSRF", CSRF, new CookieOptions
-            {
-                HttpOnly = false,
-                SameSite = SameSiteMode.None,
-                Secure = true,
-                Expires = DateTimeOffset.UtcNow.AddDays(30)
-            });
 
         }
 

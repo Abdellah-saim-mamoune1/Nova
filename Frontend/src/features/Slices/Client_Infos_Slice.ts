@@ -88,19 +88,12 @@ export async function TransfersHistoryPaginatedGet(PageNumber:number,PageSize:nu
   }
 }
 
-export function getCookie(name: string) {
-  const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
-  return match ? match[2] : null;
-}
-
 
 export async function TransferFundAPI(data:ITransferData){
   try{
   const response=await axios.put(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/transactions/transfer-fund/`,data
   ,{
-    headers:{
-      CSRF:getCookie("CSRF")
-    },
+   
     withCredentials:true}
  );
 

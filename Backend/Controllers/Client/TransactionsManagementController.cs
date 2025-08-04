@@ -55,8 +55,7 @@ namespace bankApI.Controllers.ClientController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] !=Request.Headers["CSRF"])
-                return Unauthorized();
+         
 
             var Account = User.FindFirst(ClaimTypes.Email)!.Value;
             var result = await _Service.TransferFundAsync(form,Account);

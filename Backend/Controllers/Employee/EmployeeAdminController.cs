@@ -27,9 +27,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
-
             var response = await _EmployeeManagementService.AddNewEmployeeAsync(employee);
             if (response.Status == 400)
                 return BadRequest("Request not valid.");
@@ -112,8 +109,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
            
-            if ( Request.Cookies["CSRF"]!= Request.Headers["CSRF"])
-                return Unauthorized();
 
             var response = await _EmployeeManagementService.UpdateEmployeeAsync(form);
             if (response.Status == 400)
@@ -133,9 +128,6 @@ namespace bankApI.Controllers.EmployeeController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
-
 
             var response = await _EmployeeManagementService.FreezeUnfreezeEmployeeAccountAsync(state);
             if (response.Status==400)
@@ -152,9 +144,6 @@ namespace bankApI.Controllers.EmployeeController
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
 
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
 

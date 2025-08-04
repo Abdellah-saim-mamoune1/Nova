@@ -24,9 +24,6 @@ namespace bankApI.Controllers.ClientController
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
                 
 
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
@@ -48,9 +45,7 @@ namespace bankApI.Controllers.ClientController
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
-                return Unauthorized();
-
+         
 
             var response = await _ClientManagementService.AddGetHelpRequestAsync(form);
 
