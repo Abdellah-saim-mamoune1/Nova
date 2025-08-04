@@ -30,12 +30,11 @@ return false;
 
 export async function  UpdateClientPersonalInfos(v:any){
   try{
-    const response=await axios.put("https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage",v,{withCredentials:true});
-    console.log(response.data);
+    await axios.put("https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage",v,{withCredentials:true})
     return true;
 }
     catch(err){
-      console.log(err)
+     
     return false;
     }
    }
