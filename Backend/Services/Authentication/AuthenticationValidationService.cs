@@ -56,7 +56,7 @@ namespace bankApI.Services.AuthenticationServices
             var ClientInfo = await _db.Accounts.Include(t => t.token)
                 .FirstOrDefaultAsync(p => p.AccountAddress == request.Email);
 
-            if (ClientInfo == null)
+            if (ClientInfo == null||ClientInfo.IsFrozen==true)
             {
                 return null;
             }

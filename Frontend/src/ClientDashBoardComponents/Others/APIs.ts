@@ -3,7 +3,7 @@ import { AddGetHelpRequist } from "./ClientInterfaces";
 import axios from "axios";
 export async function  AddNewGetHelpRequist(v: AddGetHelpRequist){
   try{
- await axios.post("http://localhost:5157/api/client/manage/add-get-help-request",v,{
+ await axios.post("https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage/add-get-help-request",v,{
     headers:{
       CSRF:getCookie("CSRF")
     },
@@ -18,7 +18,7 @@ export async function  AddNewGetHelpRequist(v: AddGetHelpRequist){
 
 export async function UpdateIsClientNotificationViewed(Id:number){
  try{
- const res=await axios.put(`http://localhost:5157/api/client/notifications/mark-as-viewed/${Id}`,{},{withCredentials:true});
+ const res=await axios.put(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/notifications/mark-as-viewed/${Id}`,{},{withCredentials:true});
  if(res.status===200)
   return true;
 return false;

@@ -27,7 +27,7 @@ export default function TopNav() {
 
  async function handleLogout() {
     dispatch(SetIsLoggedIn(false));
-     await axios.delete("http://localhost:5157/api/authentication/DeleteCookies",{withCredentials:true})
+     await axios.delete("https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/authentication/DeleteCookies",{withCredentials:true})
   }
 
   useEffect(() => {

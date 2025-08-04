@@ -9,7 +9,7 @@ export const fetchClientInfo = createAsyncThunk(
   async (_,thunkAPI) => {
    
     try {
-      const response = await axios.get('http://localhost:5157/api/client/manage/client-info',{withCredentials:true});
+      const response = await axios.get('https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage/client-info',{withCredentials:true});
    
     thunkAPI.dispatch(SetIsLoggedIn(true));
     thunkAPI.dispatch(fetchClientAccounts());
@@ -26,7 +26,7 @@ export const fetchClientAccounts = createAsyncThunk(
   'ClientInfos/fetchClientAccounts',
   async () => {
     try {
-      const response = await axios.get('http://localhost:5157/api/client/manage/accounts',{withCredentials:true});
+      const response = await axios.get('https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage/accounts',{withCredentials:true});
     
       return response.data; 
     } catch (error) {     
@@ -38,7 +38,7 @@ export const fetchClientAccounts = createAsyncThunk(
 
 export async function GetNotificationsPaginated(PageNumber:number,PageSize:number){
  try {
-      const response = await axios.get(`http://localhost:5157/api/client/notifications/${PageNumber},${PageSize}`,{withCredentials:true});  
+      const response = await axios.get(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/notifications/${PageNumber},${PageSize}`,{withCredentials:true});  
       return response.data; 
     } catch (error) {
      
@@ -54,7 +54,7 @@ export const GetNonReadNotificationsCount = createAsyncThunk(
   async () => {
    
    try {
-      const response = await axios.get(`http://localhost:5157/api/client/notifications/non-read-notifications-count`,{withCredentials:true});  
+      const response = await axios.get(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/notifications/non-read-notifications-count`,{withCredentials:true});  
       return response.data;
     } catch (error) {
       return null; 
@@ -64,7 +64,7 @@ export const GetNonReadNotificationsCount = createAsyncThunk(
 
 export async function TransactionsHistoryPaginatedGet(PageNumber:number,PageSize:number){
   try{
- const response=await axios.get(`http://localhost:5157/api/client/transactions/transactions-history/${PageNumber},${PageSize}`
+ const response=await axios.get(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/transactions/transactions-history/${PageNumber},${PageSize}`
   ,{withCredentials:true}
  );
 
@@ -77,7 +77,7 @@ export async function TransactionsHistoryPaginatedGet(PageNumber:number,PageSize
 
 export async function TransfersHistoryPaginatedGet(PageNumber:number,PageSize:number){
   try{
- const response=await axios.get(`http://localhost:5157/api/client/transactions/transfers-history/${PageNumber},${PageSize}`
+ const response=await axios.get(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/transactions/transfers-history/${PageNumber},${PageSize}`
   ,{withCredentials:true}
  );
 
@@ -96,7 +96,7 @@ export function getCookie(name: string) {
 
 export async function TransferFundAPI(data:ITransferData){
   try{
-  const response=await axios.put(`http://localhost:5157/api/client/transactions/transfer-fund/`,data
+  const response=await axios.put(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/transactions/transfer-fund/`,data
   ,{
     headers:{
       CSRF:getCookie("CSRF")
@@ -116,7 +116,7 @@ export async function TransferFundAPI(data:ITransferData){
 
 export async function LastMonthTransactionsHistoryGet(){
   try{
- const response=await axios.get(`http://localhost:5157/api/client/transactions/last-month-transactions-history`
+ const response=await axios.get(`https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/transactions/last-month-transactions-history`
   ,{withCredentials:true}
  );
 

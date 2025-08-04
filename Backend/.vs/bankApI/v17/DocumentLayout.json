@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\authentication\\authenticationvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\authentication\\authenticationvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\client\\clientmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\clientmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Migrations\\20250804102546_FirstMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250804102546_FirstMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\bankrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,6 +141,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\dtos\\employee\\employeespaginatedgetdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:dtos\\employee\\employeespaginatedgetdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\migrations\\20250804102546_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:migrations\\20250804102546_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,11 +154,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 304,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-04T12:20:03.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -166,20 +191,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TransactionsHistory.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
-              "RelativeDocumentMoniker": "Models\\Shared\\TransactionsHistory.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
-              "RelativeToolTip": "Models\\Shared\\TransactionsHistory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationValidationService.cs",
+              "RelativeDocumentMoniker": "Services\\Authentication\\AuthenticationValidationService.cs",
+              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationValidationService.cs",
+              "RelativeToolTip": "Services\\Authentication\\AuthenticationValidationService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:24.382Z",
+              "WhenOpened": "2025-08-04T11:53:30.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Services\\Authentication\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationService.cs",
+              "RelativeToolTip": "Services\\Authentication\\AuthenticationService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T11:52:20.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BankRevenue.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\BankRevenue.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\BankRevenue.cs",
@@ -187,12 +225,11 @@
               "RelativeToolTip": "Models\\EmployeeModels\\BankRevenue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:03.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:03.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "EmployeeAccount.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeAccount.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeAccount.cs",
@@ -200,12 +237,11 @@
               "RelativeToolTip": "Models\\EmployeeModels\\EmployeeAccount.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:58.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:17:58.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EmployeeNotifications.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeNotifications.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeNotifications.cs",
@@ -213,12 +249,11 @@
               "RelativeToolTip": "Models\\EmployeeModels\\EmployeeNotifications.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:53.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:17:53.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "EmployeeType.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeType.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeType.cs",
@@ -226,12 +261,11 @@
               "RelativeToolTip": "Models\\EmployeeModels\\EmployeeType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:50.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:17:50.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "LoginRegister.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\LoginRegister.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\LoginRegister.cs",
@@ -239,12 +273,11 @@
               "RelativeToolTip": "Models\\EmployeeModels\\LoginRegister.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:45.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:17:45.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -252,25 +285,24 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAwAAABAjbIbk48swA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:07:04.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:07:04.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T09:41:43.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -278,25 +310,24 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-04T09:17:33.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T09:17:33.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ClientManagementController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientManagementController.cs",
               "RelativeDocumentMoniker": "Controllers\\Client\\ClientManagementController.cs",
               "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientManagementController.cs",
               "RelativeToolTip": "Controllers\\Client\\ClientManagementController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T22:40:31.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "TransactionsType.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsType.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\TransactionsType.cs",
@@ -304,12 +335,11 @@
               "RelativeToolTip": "Models\\Shared\\TransactionsType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:27.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:27.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "TransferFundHistory.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransferFundHistory.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\TransferFundHistory.cs",
@@ -317,12 +347,23 @@
               "RelativeToolTip": "Models\\Shared\\TransferFundHistory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:29.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:29.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
+              "Title": "TransactionsHistory.cs",
+              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
+              "RelativeDocumentMoniker": "Models\\Shared\\TransactionsHistory.cs",
+              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
+              "RelativeToolTip": "Models\\Shared\\TransactionsHistory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T10:18:24.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "NotificationsTypes.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\NotificationsTypes.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\NotificationsTypes.cs",
@@ -330,12 +371,11 @@
               "RelativeToolTip": "Models\\Shared\\NotificationsTypes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:32.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:32.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 35,
               "Title": "20250804102546_FirstMigration.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Migrations\\20250804102546_FirstMigration.cs",
               "RelativeDocumentMoniker": "Migrations\\20250804102546_FirstMigration.cs",
@@ -343,12 +383,11 @@
               "RelativeToolTip": "Migrations\\20250804102546_FirstMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:25:46.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:25:46.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\Notification.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\Notification.cs",
@@ -356,12 +395,11 @@
               "RelativeToolTip": "Models\\Shared\\Notification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:34.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:34.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "TransactionsManagementRepository.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Employee\\TransactionsManagementRepository.cs",
@@ -369,12 +407,11 @@
               "RelativeToolTip": "Repositories\\Employee\\TransactionsManagementRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:25:37.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:25:37.856Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\Employee.cs",
@@ -382,12 +419,11 @@
               "RelativeToolTip": "Models\\EmployeeModels\\Employee.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAnwAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:09:09.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:09:09.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "AccountDto.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\AccountDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Employee\\AccountDto.cs",
@@ -399,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "ClientManagementService.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Client\\ClientManagementService.cs",
               "RelativeDocumentMoniker": "Services\\Client\\ClientManagementService.cs",
@@ -411,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "EmployeeManagementService.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Employee\\EmployeeManagementService.cs",
               "RelativeDocumentMoniker": "Services\\Employee\\EmployeeManagementService.cs",
@@ -419,12 +455,11 @@
               "RelativeToolTip": "Services\\Employee\\EmployeeManagementService.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAAAFwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:07:23.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:07:23.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ClientAdminRepository.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\ClientAdminRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Employee\\ClientAdminRepository.cs",
@@ -432,12 +467,11 @@
               "RelativeToolTip": "Repositories\\Employee\\ClientAdminRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAewB8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:21:01.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:21:01.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "EmployeeManagementRepository.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\EmployeeManagementRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Employee\\EmployeeManagementRepository.cs",
@@ -445,12 +479,11 @@
               "RelativeToolTip": "Repositories\\Employee\\EmployeeManagementRepository.cs",
               "ViewState": "AgIAANwAAAAAAAAAAAAewO4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:13:29.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:13:29.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\ClientModels\\Client.cs",
               "RelativeDocumentMoniker": "Models\\ClientModels\\Client.cs",
@@ -458,12 +491,11 @@
               "RelativeToolTip": "Models\\ClientModels\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:08:52.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:08:52.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "EmployeesPaginatedGetDto.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
@@ -471,12 +503,11 @@
               "RelativeToolTip": "Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:08:22.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:08:22.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "EmployeeAdminController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\EmployeeAdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\EmployeeAdminController.cs",
@@ -484,12 +515,11 @@
               "RelativeToolTip": "Controllers\\Employee\\EmployeeAdminController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:48:40.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:48:40.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "TransactionsManagementController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\TransactionsManagementController.cs",
               "RelativeDocumentMoniker": "Controllers\\Client\\TransactionsManagementController.cs",
@@ -497,12 +527,11 @@
               "RelativeToolTip": "Controllers\\Client\\TransactionsManagementController.cs",
               "ViewState": "AgIAADAAAAAAm7IiN9EZwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:41:41.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:41:41.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "BankRevenueController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\BankRevenueController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\BankRevenueController.cs",
@@ -510,12 +539,11 @@
               "RelativeToolTip": "Controllers\\Employee\\BankRevenueController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:42:17.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:42:17.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ClientAdminService.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Employee\\ClientAdminService.cs",
               "RelativeDocumentMoniker": "Services\\Employee\\ClientAdminService.cs",
@@ -523,12 +551,11 @@
               "RelativeToolTip": "Services\\Employee\\ClientAdminService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T09:39:37.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T09:39:37.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Authentication\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "Controllers\\Authentication\\AuthenticationController.cs",
@@ -536,12 +563,11 @@
               "RelativeToolTip": "Controllers\\Authentication\\AuthenticationController.cs",
               "ViewState": "AgIAAEIAAACAOGV1VVYRwEwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:31:34.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:31:34.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ClientAdminController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\ClientAdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\ClientAdminController.cs",
@@ -549,12 +575,11 @@
               "RelativeToolTip": "Controllers\\Employee\\ClientAdminController.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAAAFMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:42:19.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:42:19.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ClientNotificationsController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientNotificationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\Client\\ClientNotificationsController.cs",
@@ -562,12 +587,11 @@
               "RelativeToolTip": "Controllers\\Client\\ClientNotificationsController.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:48:35.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:48:35.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "TransactionsController.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\TransactionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\TransactionsController.cs",
@@ -575,12 +599,11 @@
               "RelativeToolTip": "Controllers\\Employee\\TransactionsController.cs",
               "ViewState": "AgIAACoAAACAsyZLj9EswEAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:47:53.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:47:53.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "DepositWithdrawDto.cs",
               "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\DepositWithdrawDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Employee\\DepositWithdrawDto.cs",
