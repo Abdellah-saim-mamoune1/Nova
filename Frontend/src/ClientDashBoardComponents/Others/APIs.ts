@@ -3,6 +3,7 @@ import { AddGetHelpRequist } from "./ClientInterfaces";
 import axios from "axios";
 export async function  AddNewGetHelpRequist(v: AddGetHelpRequist){
   try{
+    console.log(getCookie("CSRF"));
  await axios.post("https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage/add-get-help-request",v,{
     headers:{
       CSRF:getCookie("CSRF")
