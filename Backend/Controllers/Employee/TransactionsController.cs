@@ -36,13 +36,13 @@ namespace bankApI.Controllers.Employee
         }
 
 
-        [HttpPost("deposit/{CSRF_Token}")]
-        public async Task<IActionResult> Deposit(DepositWithdrawDto form, string CSRF_Token)
+        [HttpPost("deposit/")]
+        public async Task<IActionResult> Deposit(DepositWithdrawDto form)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
                 return Unauthorized();
 
             var response = await _TransactionsService.Deposit(form);
@@ -53,13 +53,13 @@ namespace bankApI.Controllers.Employee
         }
 
 
-        [HttpPost("withdraw/{CSRF_Token}")]
-        public async Task<IActionResult> Withdraw(DepositWithdrawDto form, string CSRF_Token)
+        [HttpPost("withdraw/")]
+        public async Task<IActionResult> Withdraw(DepositWithdrawDto form)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
                 return Unauthorized();
 
             var response = await _TransactionsService.Withdraw(form);

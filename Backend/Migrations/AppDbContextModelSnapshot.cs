@@ -22,44 +22,6 @@ namespace bankApI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("bankApI.BusinessLayer.Dto_s.AccountGetDto", b =>
-                {
-                    b.Property<string>("Account")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("Balance")
-                        .HasColumnType("float");
-
-                    b.Property<DateOnly>("CreatedAt")
-                        .HasColumnType("date");
-
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsFrozen")
-                        .HasColumnType("bit");
-
-                    b.ToTable((string)null);
-
-                    b.ToView(null, (string)null);
-                });
-
-            modelBuilder.Entity("bankApI.BusinessLayer.Dto_s.CardGetDto", b =>
-                {
-                    b.Property<string>("CardNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ExpirationDate")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable((string)null);
-
-                    b.ToView(null, (string)null);
-                });
-
             modelBuilder.Entity("bankApI.BusinessLayer.Dto_s.ClientDto_s.DClientMain.MainClientInfoDto", b =>
                 {
                     b.Property<string>("AccountAddress")
@@ -122,6 +84,49 @@ namespace bankApI.Migrations
                     b.ToTable((string)null);
 
                     b.ToView(null, (string)null);
+                });
+
+            modelBuilder.Entity("bankApI.BusinessLayer.Dto_s.GetClientInfoDto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly>("BirthDate")
+                        .HasColumnType("date");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PersonalEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MainClientInfo");
                 });
 
             modelBuilder.Entity("bankApI.Models.ClientModels.Account", b =>
@@ -210,12 +215,12 @@ namespace bankApI.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<int>("TypeId")
+                    b.Property<int?>("RoleId")
                         .HasColumnType("int");
 
                     b.HasKey("PersonId");
 
-                    b.HasIndex("TypeId");
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Clients");
                 });
@@ -236,7 +241,7 @@ namespace bankApI.Migrations
                         .HasColumnType("date")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<bool>("Isviewed")
+                    b.Property<bool>("IsViewed")
                         .HasColumnType("bit");
 
                     b.Property<int>("NotificationId")
@@ -564,7 +569,7 @@ namespace bankApI.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<int>("RoleTypeId")
+                    b.Property<int?>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<int>("TypeId")
@@ -575,7 +580,7 @@ namespace bankApI.Migrations
 
                     b.HasKey("PersonId");
 
-                    b.HasIndex("RoleTypeId");
+                    b.HasIndex("RoleId");
 
                     b.HasIndex("TypeId");
 
@@ -693,15 +698,11 @@ namespace bankApI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("bankApI.Models.ClientXEmployeeModels.Role", "Role")
+                    b.HasOne("bankApI.Models.ClientXEmployeeModels.Role", null)
                         .WithMany("Clients")
-                        .HasForeignKey("TypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RoleId");
 
                     b.Navigation("Person");
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("bankApI.Models.ClientModels.ClientXNotifications", b =>
@@ -818,11 +819,9 @@ namespace bankApI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("bankApI.Models.ClientXEmployeeModels.Role", "Role")
+                    b.HasOne("bankApI.Models.ClientXEmployeeModels.Role", null)
                         .WithMany("Employees")
-                        .HasForeignKey("RoleTypeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("RoleId");
 
                     b.HasOne("bankApI.Models.EmployeeModels.EmployeeType", "EmployeeType")
                         .WithMany("Employees")
@@ -833,8 +832,6 @@ namespace bankApI.Migrations
                     b.Navigation("EmployeeType");
 
                     b.Navigation("Person");
-
-                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("bankApI.Models.EmployeeModels.EmployeeAccount", b =>

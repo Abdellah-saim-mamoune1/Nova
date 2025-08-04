@@ -14,13 +14,9 @@ namespace bankApI.Models.EmployeeModels
         [ForeignKey("EmployeeType")]
         public int TypeId { get; set; }
 
-        [ForeignKey("Role")]
-        public int RoleTypeId { get; set; }
-
         public bool IsActive { get; set; }      
         public DateOnly CreatedAt { get; set; }
         public Person? Person { get; set; }
-        public Role? Role { get; set; }
         public EmployeeType? EmployeeType { get; set; }
 
 

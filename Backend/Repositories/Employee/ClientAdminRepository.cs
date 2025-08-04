@@ -30,7 +30,6 @@ namespace bankApI.Repositories.EmployeeRepositories
                     var client = new bankApI.Models.ClientModels.Client
                     {
                         PersonId = PersonId,
-                        TypeId = 2,
                         IsActive = false
                     };
 
@@ -57,7 +56,7 @@ namespace bankApI.Repositories.EmployeeRepositories
         {
             var AllClients = _db.Clients
            .Include(c => c.Person)
-           .Include(c => c.Role)
+         
            .AsQueryable();
 
            var clients=await AllClients
@@ -89,7 +88,7 @@ namespace bankApI.Repositories.EmployeeRepositories
                 {
                     await using var transaction = await _db.Database.BeginTransactionAsync();
 
-                    var Account = await _db.EmployeeAccount.Where(A => A.Account == email.CurrentAccount).FirstAsync();
+                    var Account = await _db.Accounts.AsQueryable().Where(A => A.AccountAddress == email.CurrentAccount).FirstAsync();
                     int CardId = await AddCard();
                     int TokenId = await AddToken();
            
@@ -98,7 +97,7 @@ namespace bankApI.Repositories.EmployeeRepositories
 
             Account account = new Account
             {
-                PersonId = Account.EmployeeId,
+                PersonId = Account.PersonId,
                 AccountAddress = GenerateKeys.GenerateId(10),
                 PassWord = hashedPassword,
                 Balance = email.InitialBalance,
@@ -123,7 +122,7 @@ namespace bankApI.Repositories.EmployeeRepositories
             {
                 Body = "The new account is " + account.AccountAddress + " with the password: " + account.PassWord,
                 Title = "New account",
-                TypeId = 4
+                TypeId = 1
 
             };
 
@@ -131,7 +130,7 @@ namespace bankApI.Repositories.EmployeeRepositories
             await _db.SaveChangesAsync();
             ClientXNotifications notification = new ClientXNotifications
             {
-                AccountId = Account.EmployeeId,
+                AccountId = Account.PersonId,
                 NotificationId = Notification.Id,
                 IsViewed = false
 

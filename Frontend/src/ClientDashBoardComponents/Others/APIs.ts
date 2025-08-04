@@ -1,8 +1,13 @@
+import { getCookie } from "../../features/Slices/Client_Infos_Slice";
 import { AddGetHelpRequist } from "./ClientInterfaces";
 import axios from "axios";
 export async function  AddNewGetHelpRequist(v: AddGetHelpRequist){
   try{
- await axios.post("http://localhost:5157/api/client/manage/add-get-help-request",v,{withCredentials:true});
+ await axios.post("http://localhost:5157/api/client/manage/add-get-help-request",v,{
+    headers:{
+      CSRF:getCookie("CSRF")
+    },
+    withCredentials:true});
    return true;
   } catch(error){
    return false;

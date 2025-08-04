@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { IAccount, ITransferData } from '../../ClientDashBoardComponents/Others/ClientInterfaces';
-import { AddNotification } from '../../ClientDashBoardComponents/Others/ClientInterfaces';
 import { InfosState } from '../../ClientDashBoardComponents/Others/ClientInterfaces';
 import { ClientInfo } from '../../ClientDashBoardComponents/Others/ClientInterfaces';
 export const fetchClientInfo = createAsyncThunk(
@@ -89,11 +88,20 @@ export async function TransfersHistoryPaginatedGet(PageNumber:number,PageSize:nu
   }
 }
 
+export function getCookie(name: string) {
+  const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+  return match ? match[2] : null;
+}
+
 
 export async function TransferFundAPI(data:ITransferData){
   try{
- const response=await axios.put(`http://localhost:5157/api/client/transactions/transfer-fund/`,data
-  ,{withCredentials:true}
+  const response=await axios.put(`http://localhost:5157/api/client/transactions/transfer-fund/`,data
+  ,{
+    headers:{
+      CSRF:getCookie("CSRF")
+    },
+    withCredentials:true}
  );
 
  return response.data;
@@ -120,25 +128,11 @@ export async function LastMonthTransactionsHistoryGet(){
 }
 
 
-export async function sendclientmessage(v:AddNotification){
-  try{
- const res=await axios.post('https://bank2-2.onrender.com/api/ManageClients/AddClientNotification',v);
- if(res.status===200)
-  return true;
-return false;
-  }
-  catch(err){
-    return false;
-  }
-}
-
-
-
 const initialState: InfosState = {
   client_informations: null,
   Accounts:null,
   IsLoggedIn:null,
-  hasFetched:false,
+  hasFetched:false, 
   NonReadNotificationsCount:null,
   Account: null,
 };

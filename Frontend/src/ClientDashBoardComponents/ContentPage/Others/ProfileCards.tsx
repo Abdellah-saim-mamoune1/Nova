@@ -12,11 +12,11 @@ if (!Accounts) {
  
 
   return (
-    <div className="w-full dark:bg-gray-900 min-h-screen grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 px-1 py-2 sm:px-4 sm:py-4">
+    <div className="w-full dark:bg-gray-900 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 px-1 py-2 sm:px-4 sm:py-4">
       {Accounts.map((account) => (
         <div
   key={account.id}
-  className="relative w-full max-w-[350px] h-[200px] bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl text-white shadow-xl p-5 flex flex-col justify-between mb-4"
+  className="relative w-full max-w-[350px] h-[200px] bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl text-white shadow-xl p-5 flex flex-col justify-between"
 >
   {/* Top Row: Chip + Balance */}
   <div className="flex justify-between items-center">

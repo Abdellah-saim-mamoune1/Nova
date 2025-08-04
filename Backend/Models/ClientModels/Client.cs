@@ -9,13 +9,9 @@ namespace bankApI.Models.ClientModels
     {
         [Key, ForeignKey("Person")]
         public int PersonId { get; set; }
-
-        [ForeignKey("Role")]
-        public int TypeId { get; set; }
         public DateOnly CreatedAt { get; set; }
         public bool IsActive { get; set; }
         public Person? Person { get; set; }
-        public Role? Role { get; set; }
    
     }
 }

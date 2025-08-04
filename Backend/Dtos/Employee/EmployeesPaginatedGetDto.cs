@@ -24,7 +24,6 @@ namespace bankApI.BusinessLayer.Dto_s.EmployeeDto_s
         public string PhoneNumber { get; set; } = string.Empty;
 
         public string Type { get; set; } = string.Empty;
-        public string RoleType { get; set; } = string.Empty;
 
         public AccountDto accountInfo { get; set; } = new();
 

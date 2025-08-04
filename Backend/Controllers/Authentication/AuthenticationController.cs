@@ -39,7 +39,6 @@ namespace bankApI.Controllers
                 Expires = DateTimeOffset.UtcNow.AddDays(30)
             });
 
-            Console.WriteLine("CSRF: " + CSRF);
         }
 
 

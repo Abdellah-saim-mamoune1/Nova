@@ -17,13 +17,13 @@ namespace bankApI.Controllers.EmployeeController
         ) : ControllerBase
     {
 
-        [HttpPost("{CSRF_Token}")]
-        public async Task<IActionResult> AddNewClientAsync( [FromBody] PersonClientSetDto form,string CSRF_Token)
+        [HttpPost]
+        public async Task<IActionResult> AddNewClientAsync( [FromBody] PersonClientSetDto form)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+            if (Request.Cookies["CSRF"] != Request.Headers["CSRF"])
                 return Unauthorized();
 
 
@@ -69,13 +69,13 @@ namespace bankApI.Controllers.EmployeeController
 
 
        
-        [HttpPost("account/{CSRF_Token}")]
-        public async Task<IActionResult> AddNewAccountAsync([FromBody] BankEmailDto form,string CSRF_Token)
+        [HttpPost("account/")]
+        public async Task<IActionResult> AddNewAccountAsync([FromBody] BankEmailDto form)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+            if (Request.Cookies["CSRF"] !=Request.Headers["CSRF"])
                 return Unauthorized();
 
 
@@ -88,13 +88,13 @@ namespace bankApI.Controllers.EmployeeController
 
         }
 
-        [HttpPost("notification/{CSRF_Token}")]
-        async public Task<IActionResult> AddClientNotification([FromBody] NotificationsDto form,string CSRF_Token)
+        [HttpPost("notification/")]
+        async public Task<IActionResult> AddClientNotification([FromBody] NotificationsDto form)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+            if (Request.Cookies["CSRF"] !=Request.Headers["CSRF"])
                 return Unauthorized();
 
             var response = await _ClientAdminService.SendClientAccountMessage(form);
@@ -104,14 +104,14 @@ namespace bankApI.Controllers.EmployeeController
             return Ok("Notification added successfully."); 
         }
 
-        [HttpPut("freeze-account/{CSRF_Token}")]
-        public async Task<IActionResult> FreezeUnfreezeClientAccountAsync([FromBody] SetEmailStateDto form,string CSRF_Token)
+        [HttpPut("freeze-account/")]
+        public async Task<IActionResult> FreezeUnfreezeClientAccountAsync([FromBody] SetEmailStateDto form)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
 
-            if (Request.Cookies["CSRF"] != CSRF_Token)
+            if (Request.Cookies["CSRF"]!= Request.Headers["CSRF"])
                 return Unauthorized();
 
             var response = await _ClientAdminService.FreezeClientAccountAsync(form);

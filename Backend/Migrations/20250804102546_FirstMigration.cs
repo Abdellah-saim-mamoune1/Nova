@@ -1,26 +1,42 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace bankApI.Migrations
 {
     /// <inheritdoc />
-    public partial class firstm : Migration
+    public partial class FirstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "BankRevenues",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Amount = table.Column<double>(type: "float", nullable: false),
+                    Source = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
+                    RelatedTransactionId = table.Column<int>(type: "int", nullable: false),
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BankRevenues", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Cards",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    CardNumber = table.Column<string>(type: "text", nullable: false),
-                    ExpirationDate = table.Column<string>(type: "text", nullable: false),
-                    CVV = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CardNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ExpirationDate = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CVV = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,9 +47,9 @@ namespace bankApI.Migrations
                 name: "EmployeeType",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Type = table.Column<string>(type: "text", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -41,12 +57,32 @@ namespace bankApI.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "MainClientInfo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BirthDate = table.Column<DateOnly>(type: "date", nullable: false),
+                    PersonalEmail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MainClientInfo", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "NotificationsTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "text", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -57,14 +93,15 @@ namespace bankApI.Migrations
                 name: "Persons",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    FirstName = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    LastName = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     BirthDate = table.Column<DateOnly>(type: "date", nullable: false),
-                    Email = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
-                    Address = table.Column<string>(type: "text", nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -75,9 +112,9 @@ namespace bankApI.Migrations
                 name: "Roles",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Type = table.Column<string>(type: "text", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -88,10 +125,10 @@ namespace bankApI.Migrations
                 name: "Tokens",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    RefreshToken = table.Column<string>(type: "text", nullable: false),
-                    RefreshTokenExpiryTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RefreshTokenExpiryTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -102,9 +139,9 @@ namespace bankApI.Migrations
                 name: "TransactionsTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Type = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -115,11 +152,11 @@ namespace bankApI.Migrations
                 name: "Notifications",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Title = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: false),
-                    Body = table.Column<string>(type: "text", nullable: false),
-                    TypeId = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Body = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TypeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -136,10 +173,10 @@ namespace bankApI.Migrations
                 name: "Clients",
                 columns: table => new
                 {
-                    PersonId = table.Column<int>(type: "integer", nullable: false),
-                    TypeId = table.Column<int>(type: "integer", nullable: false),
-                    CreatedAt = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE"),
-                    IsActive = table.Column<bool>(type: "boolean", nullable: false)
+                    PersonId = table.Column<int>(type: "int", nullable: false),
+                    CreatedAt = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "GETDATE()"),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    RoleId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -151,23 +188,22 @@ namespace bankApI.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Clients_Roles_TypeId",
-                        column: x => x.TypeId,
+                        name: "FK_Clients_Roles_RoleId",
+                        column: x => x.RoleId,
                         principalTable: "Roles",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
                 name: "Employees",
                 columns: table => new
                 {
-                    PersonId = table.Column<int>(type: "integer", nullable: false),
-                    salary = table.Column<double>(type: "double precision", nullable: false),
-                    TypeId = table.Column<int>(type: "integer", nullable: false),
-                    RoleTypeId = table.Column<int>(type: "integer", nullable: false),
-                    IsActive = table.Column<bool>(type: "boolean", nullable: false),
-                    CreatedAt = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE")
+                    PersonId = table.Column<int>(type: "int", nullable: false),
+                    salary = table.Column<double>(type: "float", nullable: false),
+                    TypeId = table.Column<int>(type: "int", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "GETDATE()"),
+                    RoleId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -185,27 +221,26 @@ namespace bankApI.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Employees_Roles_RoleTypeId",
-                        column: x => x.RoleTypeId,
+                        name: "FK_Employees_Roles_RoleId",
+                        column: x => x.RoleId,
                         principalTable: "Roles",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
                 name: "Accounts",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    AccountAddress = table.Column<string>(type: "text", nullable: false),
-                    PassWord = table.Column<string>(type: "text", nullable: false),
-                    PersonId = table.Column<int>(type: "integer", nullable: false),
-                    CardId = table.Column<int>(type: "integer", nullable: false),
-                    TokenId = table.Column<int>(type: "integer", nullable: false),
-                    Balance = table.Column<double>(type: "double precision", nullable: false),
-                    IsFrozen = table.Column<bool>(type: "boolean", nullable: false),
-                    CreatedAt = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE")
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccountAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PassWord = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PersonId = table.Column<int>(type: "int", nullable: false),
+                    CardId = table.Column<int>(type: "int", nullable: false),
+                    TokenId = table.Column<int>(type: "int", nullable: false),
+                    Balance = table.Column<double>(type: "float", nullable: false),
+                    IsFrozen = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "GETDATE()")
                 },
                 constraints: table =>
                 {
@@ -234,13 +269,13 @@ namespace bankApI.Migrations
                 name: "EmployeeAccount",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    EmployeeId = table.Column<int>(type: "integer", nullable: false),
-                    Account = table.Column<string>(type: "text", nullable: false),
-                    Password = table.Column<string>(type: "text", nullable: false),
-                    IsFrozen = table.Column<bool>(type: "boolean", nullable: false),
-                    TokenId = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    EmployeeId = table.Column<int>(type: "int", nullable: false),
+                    Account = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsFrozen = table.Column<bool>(type: "bit", nullable: false),
+                    TokenId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -260,47 +295,19 @@ namespace bankApI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TransactionRegistre",
+                name: "LoginRegister",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Amount = table.Column<double>(type: "double precision", nullable: false),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE"),
-                    SenderClientId = table.Column<int>(type: "integer", nullable: false),
-                    ReceiverClientId = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()"),
+                    EmployeeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TransactionRegistre", x => x.Id);
+                    table.PrimaryKey("PK_LoginRegister", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TransactionRegistre_Clients_ReceiverClientId",
-                        column: x => x.ReceiverClientId,
-                        principalTable: "Clients",
-                        principalColumn: "PersonId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_TransactionRegistre_Clients_SenderClientId",
-                        column: x => x.SenderClientId,
-                        principalTable: "Clients",
-                        principalColumn: "PersonId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "LoginRegistre",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE"),
-                    EmployeeId = table.Column<int>(type: "integer", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LoginRegistre", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_LoginRegistre_Employees_EmployeeId",
+                        name: "FK_LoginRegister_Employees_EmployeeId",
                         column: x => x.EmployeeId,
                         principalTable: "Employees",
                         principalColumn: "PersonId",
@@ -311,12 +318,12 @@ namespace bankApI.Migrations
                 name: "ClientXNotifications",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    AccountId = table.Column<int>(type: "integer", nullable: false),
-                    NotificationId = table.Column<int>(type: "integer", nullable: false),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE"),
-                    Isviewed = table.Column<bool>(type: "boolean", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccountId = table.Column<int>(type: "int", nullable: false),
+                    NotificationId = table.Column<int>(type: "int", nullable: false),
+                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "GETDATE()"),
+                    IsViewed = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -339,12 +346,12 @@ namespace bankApI.Migrations
                 name: "GetHelp",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ClientAccountId = table.Column<int>(type: "integer", nullable: false),
-                    Subject = table.Column<string>(type: "character varying(31)", maxLength: 31, nullable: false),
-                    Message = table.Column<string>(type: "character varying(401)", maxLength: 401, nullable: false),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE")
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ClientAccountId = table.Column<int>(type: "int", nullable: false),
+                    Subject = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "GETDATE()")
                 },
                 constraints: table =>
                 {
@@ -358,51 +365,23 @@ namespace bankApI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TransactionsHistory",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    AccountId = table.Column<int>(type: "integer", nullable: false),
-                    TypeId = table.Column<int>(type: "integer", nullable: false),
-                    Amount = table.Column<double>(type: "double precision", nullable: false),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TransactionsHistory", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_TransactionsHistory_Accounts_AccountId",
-                        column: x => x.AccountId,
-                        principalTable: "Accounts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_TransactionsHistory_TransactionsTypes_TypeId",
-                        column: x => x.TypeId,
-                        principalTable: "TransactionsTypes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "TransferFundHistory",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    SenderAccountId = table.Column<int>(type: "integer", nullable: false),
-                    RecieverAccountId = table.Column<int>(type: "integer", nullable: false),
-                    Amount = table.Column<double>(type: "double precision", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE")
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SenderAccountId = table.Column<int>(type: "int", nullable: false),
+                    RecipientAccountId = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<double>(type: "float", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()")
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TransferFundHistory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TransferFundHistory_Accounts_RecieverAccountId",
-                        column: x => x.RecieverAccountId,
+                        name: "FK_TransferFundHistory_Accounts_RecipientAccountId",
+                        column: x => x.RecipientAccountId,
                         principalTable: "Accounts",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -418,12 +397,12 @@ namespace bankApI.Migrations
                 name: "EmployeeNotifications",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    AccountId = table.Column<int>(type: "integer", nullable: false),
-                    NotificationId = table.Column<int>(type: "integer", nullable: false),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE"),
-                    Isviewed = table.Column<bool>(type: "boolean", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccountId = table.Column<int>(type: "int", nullable: false),
+                    NotificationId = table.Column<int>(type: "int", nullable: false),
+                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "GETDATE()"),
+                    Isviewed = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -443,30 +422,36 @@ namespace bankApI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TransactionsRegistres",
+                name: "TransactionsHistory",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    EmployeeAccountId = table.Column<int>(type: "integer", nullable: false),
-                    ClientAccountId = table.Column<int>(type: "integer", nullable: false),
-                    Amount = table.Column<double>(type: "double precision", nullable: false),
-                    type = table.Column<string>(type: "text", nullable: false),
-                    Date = table.Column<DateOnly>(type: "date", nullable: false, defaultValueSql: "CURRENT_DATE")
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AccountId = table.Column<int>(type: "int", nullable: false),
+                    EmployeeAccountId = table.Column<int>(type: "int", nullable: false),
+                    TypeId = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<double>(type: "float", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETDATE()")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TransactionsRegistres", x => x.Id);
+                    table.PrimaryKey("PK_TransactionsHistory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_TransactionsRegistres_Accounts_ClientAccountId",
-                        column: x => x.ClientAccountId,
+                        name: "FK_TransactionsHistory_Accounts_AccountId",
+                        column: x => x.AccountId,
                         principalTable: "Accounts",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_TransactionsRegistres_EmployeeAccount_EmployeeAccountId",
+                        name: "FK_TransactionsHistory_EmployeeAccount_EmployeeAccountId",
                         column: x => x.EmployeeAccountId,
                         principalTable: "EmployeeAccount",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_TransactionsHistory_TransactionsTypes_TypeId",
+                        column: x => x.TypeId,
+                        principalTable: "TransactionsTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -489,9 +474,9 @@ namespace bankApI.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Clients_TypeId",
+                name: "IX_Clients_RoleId",
                 table: "Clients",
-                column: "TypeId");
+                column: "RoleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ClientXNotifications_AccountId",
@@ -526,9 +511,9 @@ namespace bankApI.Migrations
                 column: "NotificationId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Employees_RoleTypeId",
+                name: "IX_Employees_RoleId",
                 table: "Employees",
-                column: "RoleTypeId");
+                column: "RoleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Employees_TypeId",
@@ -541,8 +526,8 @@ namespace bankApI.Migrations
                 column: "ClientAccountId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LoginRegistre_EmployeeId",
-                table: "LoginRegistre",
+                name: "IX_LoginRegister_EmployeeId",
+                table: "LoginRegister",
                 column: "EmployeeId");
 
             migrationBuilder.CreateIndex(
@@ -551,19 +536,14 @@ namespace bankApI.Migrations
                 column: "TypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TransactionRegistre_ReceiverClientId",
-                table: "TransactionRegistre",
-                column: "ReceiverClientId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TransactionRegistre_SenderClientId",
-                table: "TransactionRegistre",
-                column: "SenderClientId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_TransactionsHistory_AccountId",
                 table: "TransactionsHistory",
                 column: "AccountId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TransactionsHistory_EmployeeAccountId",
+                table: "TransactionsHistory",
+                column: "EmployeeAccountId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TransactionsHistory_TypeId",
@@ -571,19 +551,9 @@ namespace bankApI.Migrations
                 column: "TypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TransactionsRegistres_ClientAccountId",
-                table: "TransactionsRegistres",
-                column: "ClientAccountId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TransactionsRegistres_EmployeeAccountId",
-                table: "TransactionsRegistres",
-                column: "EmployeeAccountId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_TransferFundHistory_RecieverAccountId",
+                name: "IX_TransferFundHistory_RecipientAccountId",
                 table: "TransferFundHistory",
-                column: "RecieverAccountId");
+                column: "RecipientAccountId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TransferFundHistory_SenderAccountId",
@@ -595,6 +565,12 @@ namespace bankApI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "BankRevenues");
+
+            migrationBuilder.DropTable(
+                name: "Clients");
+
+            migrationBuilder.DropTable(
                 name: "ClientXNotifications");
 
             migrationBuilder.DropTable(
@@ -604,16 +580,13 @@ namespace bankApI.Migrations
                 name: "GetHelp");
 
             migrationBuilder.DropTable(
-                name: "LoginRegistre");
+                name: "LoginRegister");
 
             migrationBuilder.DropTable(
-                name: "TransactionRegistre");
+                name: "MainClientInfo");
 
             migrationBuilder.DropTable(
                 name: "TransactionsHistory");
-
-            migrationBuilder.DropTable(
-                name: "TransactionsRegistres");
 
             migrationBuilder.DropTable(
                 name: "TransferFundHistory");
@@ -625,13 +598,10 @@ namespace bankApI.Migrations
                 name: "Employees");
 
             migrationBuilder.DropTable(
-                name: "Clients");
+                name: "EmployeeAccount");
 
             migrationBuilder.DropTable(
                 name: "TransactionsTypes");
-
-            migrationBuilder.DropTable(
-                name: "EmployeeAccount");
 
             migrationBuilder.DropTable(
                 name: "Accounts");

@@ -48,7 +48,7 @@ export const LoginPage = () => {
           password: formData.password,
         }
       );
-
+      localStorage.setItem("Account",formData.email);
      dispatch(SetAccount(formData.email));
      dispatch(SetIsLoggedIn(true));
       

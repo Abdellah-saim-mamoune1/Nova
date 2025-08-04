@@ -73,7 +73,7 @@ namespace bankApI.Repositories.EmployeeRepositories
                     BirthDate = c.Person.BirthDate,
                     PhoneNumber = c.Person.PhoneNumber,
                     Type = c.Person.Employee.EmployeeType!.Type,
-                    RoleType = c.Person.Employee.Role!.Type,
+                  //  RoleType = c.Person.Employee.Role!.Type,
                     IsActive = c.Person.Employee.IsActive
 
                 }).FirstOrDefaultAsync();
@@ -103,7 +103,6 @@ namespace bankApI.Repositories.EmployeeRepositories
               BirthDate = c.Person.BirthDate,
               PhoneNumber = c.Person.PhoneNumber,
               Type = c.Person.Employee.EmployeeType!.Type,
-              RoleType = c.Person.Employee.Role!.Type,
               IsActive = c.Person.Employee.IsActive
 
           }).Skip((PageNumber-1)*PageSize)
@@ -238,7 +237,6 @@ namespace bankApI.Repositories.EmployeeRepositories
             var Employee = new Models.EmployeeModels.Employee
             { 
                 PersonId = PersonId,
-                RoleTypeId = employee.TypeId,
                 TypeId = employee.TypeId,
                 IsActive = false,
                

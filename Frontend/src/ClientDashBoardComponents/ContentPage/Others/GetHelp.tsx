@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Typography, Divider } from "@mui/material";
 import { AddGetHelpRequist } from "../../Others/ClientInterfaces";
 import { AddNewGetHelpRequist } from "../../Others/APIs";
-import { useAppSelector } from "../../../features/Slices/hooks";
 
 interface FormData {
   subject: string;
@@ -19,9 +18,7 @@ export function GetHelp() {
   const [notificationVisible, setNotificationVisible] = useState(false);
   const [showConfirmationCard, setShowConfirmationCard] = useState(false);
   const [Status,SetStatus]=useState<string>("");
-  const AccountId = useAppSelector(
-    (state) => state.ClientInfos.Account
-  );
+  const AccountId =localStorage.getItem("Account");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

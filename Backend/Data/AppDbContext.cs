@@ -16,8 +16,6 @@ namespace bankApI.Data
         public DbSet<Person> Persons { get; set; }
 
         public DbSet<Employee>Employees{ get; set; }
-
-        public DbSet<Role> Roles { get; set; }
         public DbSet<Account>Accounts { get; set; }
 
         public DbSet<EmployeeType> EmployeeType { get; set; }
@@ -51,16 +49,14 @@ namespace bankApI.Data
 
         //DTOs 
         public DbSet<GetClientInfoDto> MainClientInfo { get; set; }
-       // public DbSet<AccountGetDto> GetAccounts { get; set; }
-        //public DbSet<CardGetDto> GetCards { get; set; }
+      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             //DTOs
 
             modelBuilder.Entity<MainClientInfoDto>().HasNoKey().ToView(null);
-         //   modelBuilder.Entity<AccountGetDto>().HasNoKey().ToView(null);
-           // modelBuilder.Entity<CardGetDto>().HasNoKey().ToView(null);
+        
 
 
             modelBuilder.Entity<Person>()
@@ -88,16 +84,6 @@ namespace bankApI.Data
                .WithOne(c => c.Card)
                .HasForeignKey<Account>(c => c.CardId)
                .OnDelete(DeleteBehavior.Restrict);
-
-
-
-            modelBuilder.Entity<Employee>()
-        .HasOne(p => p.Role)
-        .WithMany(c => c.Employees)
-        .HasForeignKey(c => c.RoleTypeId)
-        .OnDelete(DeleteBehavior.Restrict);
-
-      
 
             modelBuilder.Entity<Employee>()
             .HasOne(p => p.EmployeeType)

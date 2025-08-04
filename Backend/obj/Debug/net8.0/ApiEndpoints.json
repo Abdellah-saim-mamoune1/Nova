@@ -44,7 +44,7 @@
   {
     "ContainingType": "bankApI.Controllers.ClientController.ClientManagementController",
     "Method": "UpdateClientByIdAsync",
-    "RelativePath": "api/client/manage/{CSRF_Token}",
+    "RelativePath": "api/client/manage",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -52,11 +52,6 @@
       {
         "Name": "client",
         "Type": "bankApI.BusinessLayer.Dto_s.UpdateClientDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -75,7 +70,7 @@
   {
     "ContainingType": "bankApI.Controllers.ClientController.ClientManagementController",
     "Method": "AddGetHelpRequestAsync",
-    "RelativePath": "api/client/manage/add-get-help-request/{CSRF_Token}",
+    "RelativePath": "api/client/manage/add-get-help-request",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -83,11 +78,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.NotificationsDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -184,7 +174,7 @@
   {
     "ContainingType": "bankApI.Controllers.ClientController.TransactionsManagementController",
     "Method": "TransferFundAsync",
-    "RelativePath": "api/client/transactions/transfer-fund/{CSRF_Token}",
+    "RelativePath": "api/client/transactions/transfer-fund",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -192,11 +182,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.ClientDto_s.DTransactionsHistory.TransferFundSetDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -226,7 +211,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
     "Method": "AddEmployeeAsync",
-    "RelativePath": "api/employee/{CSRF_Token}",
+    "RelativePath": "api/employee",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -235,11 +220,6 @@
         "Name": "employee",
         "Type": "bankApI.BusinessLayer.Dto_s.EmployeePersonDto",
         "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -247,7 +227,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
     "Method": "UpdateEmployeeAsync",
-    "RelativePath": "api/employee/{CSRF_Token}",
+    "RelativePath": "api/employee",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -255,11 +235,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.EmployeeDto_s.EmployeeUpdateDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -289,7 +264,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
     "Method": "AddNewClientAsync",
-    "RelativePath": "api/employee/client/{CSRF_Token}",
+    "RelativePath": "api/employee/client",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -298,11 +273,6 @@
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.PersonClientSetDto",
         "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -310,7 +280,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
     "Method": "AddNewAccountAsync",
-    "RelativePath": "api/employee/client/account/{CSRF_Token}",
+    "RelativePath": "api/employee/client/account",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -318,11 +288,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.BankEmailDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -384,7 +349,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
     "Method": "FreezeUnfreezeClientAccountAsync",
-    "RelativePath": "api/employee/client/freeze-account/{CSRF_Token}",
+    "RelativePath": "api/employee/client/freeze-account",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -393,11 +358,6 @@
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.SetEmailStateDto",
         "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -405,7 +365,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.ClientAdminController",
     "Method": "AddClientNotification",
-    "RelativePath": "api/employee/client/notification/{CSRF_Token}",
+    "RelativePath": "api/employee/client/notification",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -414,11 +374,6 @@
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.NotificationsDto",
         "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -426,7 +381,7 @@
   {
     "ContainingType": "bankApI.Controllers.Employee.TransactionsController",
     "Method": "Deposit",
-    "RelativePath": "api/employee/client/transactions/deposit/{CSRF_Token}",
+    "RelativePath": "api/employee/client/transactions/deposit",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -434,11 +389,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.EmployeeDto_s.DepositWithdrawDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -489,7 +439,7 @@
   {
     "ContainingType": "bankApI.Controllers.Employee.TransactionsController",
     "Method": "Withdraw",
-    "RelativePath": "api/employee/client/transactions/withdraw/{CSRF_Token}",
+    "RelativePath": "api/employee/client/transactions/withdraw",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -497,11 +447,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.EmployeeDto_s.DepositWithdrawDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -541,7 +486,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
     "Method": "FreezeUnfreezeEmployeeAccountAsync",
-    "RelativePath": "api/employee/freeze-account/{CSRF_Token}",
+    "RelativePath": "api/employee/freeze-account",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -549,11 +494,6 @@
       {
         "Name": "state",
         "Type": "bankApI.BusinessLayer.Dto_s.SetEmailStateDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -599,7 +539,7 @@
   {
     "ContainingType": "bankApI.Controllers.EmployeeController.EmployeeAdminController",
     "Method": "SendMessageToEmployee",
-    "RelativePath": "api/employee/message/{CSRF_Token}",
+    "RelativePath": "api/employee/message",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -607,11 +547,6 @@
       {
         "Name": "form",
         "Type": "bankApI.BusinessLayer.Dto_s.NotificationsDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "CSRF_Token",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],

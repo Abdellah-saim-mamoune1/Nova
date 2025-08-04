@@ -33,8 +33,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 
-
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -89,10 +87,6 @@ builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ? JWT Authentication setup
-//var key = Encoding.UTF8.GetBytes("thisIsAReallyStrongSecretKey1234567890");
-//"Server=DESKTOP-GM7TUGJ;Database=MyBankApp2;User Id=sa;Password=1234;TrustServerCertificate=True;"
-
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -109,8 +103,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]!)),
            
         };
-
-      
      
     });
 
@@ -158,12 +150,14 @@ app.Use(async (context, next) =>
     await next();
 });
 
+
+
 app.UseCors("AllowReactApp");
 
 app.UseAuthentication(); 
 app.UseAuthorization();
 
-// ? Swagger for development
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
