@@ -30,7 +30,7 @@ return false;
 
 export async function  UpdateClientPersonalInfos(v:any){
   try{
-    const response=await axios.put("http://localhost:5157/api/client/manage",v,{withCredentials:true});
+    const response=await axios.put("https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/client/manage",v,{withCredentials:true});
     console.log(response.data);
     return true;
 }
