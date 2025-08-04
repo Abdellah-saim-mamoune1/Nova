@@ -13,7 +13,7 @@ export function Dashboard() {
   const clientName = `${clientInfo?.firstName ?? ""} ${clientInfo?.lastName ?? ""}`.trim();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const accountsPerPage = 3;
+  const accountsPerPage = 1;
 
   if (!clientInfo || !Accounts) {
     return <LoadingCircle />;
