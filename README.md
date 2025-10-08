@@ -13,13 +13,6 @@
 
 ---
 
-## Live Demo
-
-- **Frontend:** [https://nova-zhe3.vercel.app/](https://nova-zhe3.vercel.app/)
-- **Backend:** [https://novaapp1-ctdvfydcdfb8ctcq.spaincentral-01.azurewebsites.net/](https://novaapp1-ctdvfydcdfb8ctcq.spaincentral-01.azurewebsites.net/)
-
----
-
 ## Getting Started
 
 ### 1. Clone the repository
