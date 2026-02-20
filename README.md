@@ -18,7 +18,7 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Abdellah-saim-mamoune1/Nova_Bank
+git clone https://github.com/Abdellah-saim-mamoune1/Nova
 cd Nova
 ```
 ### 2. Setup Frontend
