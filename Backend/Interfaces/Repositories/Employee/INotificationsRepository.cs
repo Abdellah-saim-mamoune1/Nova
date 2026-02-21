@@ -7,5 +7,6 @@ namespace bankApI.Interfaces.RepositoriesInterfaces.Employee
     {
         public Task<NotificationsPaginatedGetDto> GetNotifications(int Id,int PageNumber,int PageSize);
         public Task<bool> MarkAsViewed(int NotificationId, int EmployeeId);
+        public Task AddNotificationType(string Type);
     }
 }

@@ -21,8 +21,19 @@ namespace bankApI.Repositories.Shared
                 return client;
             try
             {
-                client = (await Context.MainClientInfo
-         .FromSqlInterpolated($"EXEC GetClientInfo {Id}").ToListAsync()).FirstOrDefault();
+                client = await Context.Persons.Include(c=>c.Client)
+                    .Where(c=>c.Id==Id).Select(c => new GetClientInfoDto
+                    {
+                        Id = c.Id,
+                        FirstName = c.FirstName,
+                        LastName = c.LastName,
+                        PersonalEmail = c.Email,
+                        Address = c.Address,
+                        BirthDate = c.BirthDate,
+                        PhoneNumber = c.PhoneNumber,
+
+                        IsActive = c.Client!.IsActive
+                    }).FirstOrDefaultAsync();
 
 
                 _cache.Set<GetClientInfoDto?>($"Client_{Id}", client,TimeSpan.FromHours(10));

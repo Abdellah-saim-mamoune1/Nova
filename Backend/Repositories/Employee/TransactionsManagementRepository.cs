@@ -223,6 +223,12 @@ namespace bankApI.Repositories.Employee
 
         }
 
+
+        public async Task AddTransactionsTypes(string type)
+        {
+             Context.TransactionsTypes.Add(new TransactionsType { Type = type });
+             await Context.SaveChangesAsync(); 
+        }
         public async Task<int> Deposit(DepositWithdrawDto form)
         {
             int TransactionId = -1;

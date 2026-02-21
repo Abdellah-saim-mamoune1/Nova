@@ -26,7 +26,7 @@ useEffect(()=>{
     return( <div className="w-full dark:text-gray-100 h-full flex-col flex justify-center">
       
       <div className="dark:bg-gray-800 mx-auto bg-white p-4 px-7 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4">Transactions History</h2>
+      <h2 className="text-xl font-semibold mb-4">Transfers History</h2>
       
       <div className="overflow-x-auto">
         <table className="min-w-full dark:border-gray-600 table-auto border-collapse border border-gray-300">

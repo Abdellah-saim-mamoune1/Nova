@@ -1,4 +1,5 @@
 using bankApI.Data;
+using bankApI.db_samples;
 using bankApI.Interfaces.Repositories.Employee;
 using bankApI.Interfaces.Repositories.Shared;
 using bankApI.Interfaces.RepositoriesInterfaces.AuthenticationRepositoryInterfaces;
@@ -28,6 +29,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,7 +40,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-
+builder.Services.AddScoped<Seeder>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<IAuthenticationValidationService, AuthenticationValidationService>();
 builder.Services.AddScoped<IClientManagementService, ClientManagementService>();
@@ -115,7 +117,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactApp",
         policy =>
         {
-            policy.WithOrigins("https://nova-zhe3.vercel.app")
+            policy.WithOrigins("http://localhost:3001")
                   .AllowCredentials()
                   .AllowAnyHeader()
                   .AllowAnyMethod();
@@ -136,7 +138,16 @@ var app = builder.Build();
 
 app.UseCors("AllowReactApp");
 
-app.UseHttpsRedirection();
+
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.EnsureCreated();
+}
+
+//app.UseHttpsRedirection();
 
 
 //Extracting  JWT from the cookie and append it to the api header instead of storing JWT in local storage
@@ -153,9 +164,16 @@ app.Use(async (context, next) =>
 });
 
 
+using (var scope = app.Services.CreateScope())
+{
+    var Seeder = scope.ServiceProvider.GetRequiredService<Seeder>();
+  
+       await Seeder.Seed();
+}
 
 app.UseAuthentication(); 
 app.UseAuthorization();
+
 
 
 if (app.Environment.IsDevelopment())

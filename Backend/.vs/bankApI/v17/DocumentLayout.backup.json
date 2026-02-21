@@ -1,150 +1,230 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\db_samples\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:db_samples\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\employee\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\employee\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\employee\\employeeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\employeeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\employee\\clientadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\clientadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\employee\\bankrevenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\bankrevenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\client\\transactionsmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\transactionsmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\client\\clientnotificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\clientnotificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\controllers\\client\\clientmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\clientmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\authentication\\authenticationvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\authentication\\authenticationvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\bankrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\bankrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\employeeaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employeeaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\employeenotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employeenotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\loginregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\loginregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\employeetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employeetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\shared\\notificationstypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\notificationstypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\shared\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\shared\\transferfundhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\transferfundhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\shared\\transactionstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\transactionstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\shared\\transactionshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\transactionshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\employeemodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\repositories\\employee\\employeemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\employeemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\repositories\\employee\\clientadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\clientadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\models\\clientmodels\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\clientmodels\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\employee\\employeemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\employeemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\repositories\\employee\\transactionsmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\transactionsmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\transactionsmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\employee\\clientadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\clientadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\client\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\client\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\services\\client\\clientmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\db_samples\\sample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:db_samples\\sample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\employee\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\client\\transactionsmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\client\\transactionsmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\shared\\clientinfogetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\shared\\clientinfogetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\clientadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\clientadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\statisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\statisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\bankrevenuemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\bankrevenuemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\client\\clientmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\client\\clientmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\client\\notificationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\client\\notificationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\client\\statisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\client\\statisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\employeemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\employeemanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\notificationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\notificationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\shared\\clientinfogetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\shared\\clientinfogetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\client\\clientmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\client\\clientmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\dtos\\employee\\accountdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\client\\clientmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\clientmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\authentication\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\authentication\\authenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\authentication\\authenticationvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\authentication\\authenticationvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\authentication\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\validators\\shared\\notificationsdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:validators\\shared\\notificationsdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\employee\\bankrevenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\bankrevenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\client\\transactionsmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\transactionsmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\client\\clientnotificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\client\\clientnotificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\shared\\notificationstypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\notificationstypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\employeemodels\\employeenotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employeenotifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\employeemodels\\employeetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employeetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\employee\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\employee\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\employee\\employeeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\employeeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\controllers\\employee\\clientadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:controllers\\employee\\clientadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\employeemodels\\bankrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\bankrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\employeemodels\\employeeaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employeeaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\employeemodels\\loginregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\loginregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\shared\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\shared\\transferfundhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\transferfundhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\shared\\transactionstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\transactionstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\shared\\transactionshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\shared\\transactionshistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\employeemodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\employeemodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\models\\clientmodels\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:models\\clientmodels\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\employee\\employeemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\employeemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\employee\\clientadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\clientadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\dtos\\employee\\accountdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:dtos\\employee\\accountdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\dtos\\employee\\depositwithdrawdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\dtos\\employee\\depositwithdrawdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:dtos\\employee\\depositwithdrawdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\dtos\\employee\\employeespaginatedgetdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\dtos\\employee\\employeespaginatedgetdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:dtos\\employee\\employeespaginatedgetdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\tadj tech\\desktop\\nova\\backend\\migrations\\20250804102546_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\migrations\\20250804102546_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:migrations\\20250804102546_firstmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\interfaces\\repositories\\employee\\iemployeemanagementrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:interfaces\\repositories\\employee\\iemployeemanagementrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\interfaces\\repositories\\employee\\inotificationsrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:interfaces\\repositories\\employee\\inotificationsrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\interfaces\\repositories\\employee\\itransactionsmanagementrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:interfaces\\repositories\\employee\\itransactionsmanagementrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -154,24 +234,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 304,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StatisticsController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\StatisticsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Employee\\StatisticsController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\StatisticsController.cs",
-              "RelativeToolTip": "Controllers\\Employee\\StatisticsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T14:38:13.079Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -182,67 +249,392 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionsManagementService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Client\\TransactionsManagementService.cs",
+              "RelativeDocumentMoniker": "Services\\Client\\TransactionsManagementService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Client\\TransactionsManagementService.cs",
+              "RelativeToolTip": "Services\\Client\\TransactionsManagementService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T00:34:11.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ITransactionsManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Interfaces\\Repositories\\Employee\\ITransactionsManagementRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\Employee\\ITransactionsManagementRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Interfaces\\Repositories\\Employee\\ITransactionsManagementRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\Employee\\ITransactionsManagementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T00:32:52.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransactionsService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\TransactionsService.cs",
+              "RelativeDocumentMoniker": "Services\\Employee\\TransactionsService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\TransactionsService.cs",
+              "RelativeToolTip": "Services\\Employee\\TransactionsService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T00:27:48.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientInfoGetRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Shared\\ClientInfoGetRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Shared\\ClientInfoGetRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Shared\\ClientInfoGetRepository.cs",
+              "RelativeToolTip": "Repositories\\Shared\\ClientInfoGetRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:29:47.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sample.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Sample.cs",
+              "RelativeDocumentMoniker": "db_samples\\Sample.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Sample.cs",
+              "RelativeToolTip": "db_samples\\Sample.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAQwI0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:18:00.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientAdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\ClientAdminRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Employee\\ClientAdminRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\ClientAdminRepository.cs",
+              "RelativeToolTip": "Repositories\\Employee\\ClientAdminRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T21:21:01.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Seeder.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Seeder.cs",
+              "RelativeDocumentMoniker": "db_samples\\Seeder.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Seeder.cs",
+              "RelativeToolTip": "db_samples\\Seeder.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowE4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:17:38.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionsManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Employee\\TransactionsManagementRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
+              "RelativeToolTip": "Repositories\\Employee\\TransactionsManagementRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T22:25:37.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\TransactionsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Client\\TransactionsRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\TransactionsRepository.cs",
+              "RelativeToolTip": "Repositories\\Client\\TransactionsRepository.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowFwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:37:47.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatisticsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\StatisticsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Employee\\StatisticsRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\StatisticsRepository.cs",
+              "RelativeToolTip": "Repositories\\Employee\\StatisticsRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:37:06.485Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "BankRevenueManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\BankRevenueManagementRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Employee\\BankRevenueManagementRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\BankRevenueManagementRepository.cs",
+              "RelativeToolTip": "Repositories\\Employee\\BankRevenueManagementRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:18:19.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClientManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\ClientManagementRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Client\\ClientManagementRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\ClientManagementRepository.cs",
+              "RelativeToolTip": "Repositories\\Client\\ClientManagementRepository.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowGoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:12:02.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NotificationsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\NotificationsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Client\\NotificationsRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\NotificationsRepository.cs",
+              "RelativeToolTip": "Repositories\\Client\\NotificationsRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:38:00.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StatisticsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\StatisticsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Client\\StatisticsRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\StatisticsRepository.cs",
+              "RelativeToolTip": "Repositories\\Client\\StatisticsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:37:58.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\EmployeeManagementRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Employee\\EmployeeManagementRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\EmployeeManagementRepository.cs",
+              "RelativeToolTip": "Repositories\\Employee\\EmployeeManagementRepository.cs",
+              "ViewState": "AgIAAC4BAAAAAAAAAADwvxgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T21:13:29.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ClientInfoGetService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Shared\\ClientInfoGetService.cs",
+              "RelativeDocumentMoniker": "Services\\Shared\\ClientInfoGetService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Shared\\ClientInfoGetService.cs",
+              "RelativeToolTip": "Services\\Shared\\ClientInfoGetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T23:29:05.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NotificationsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\NotificationsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Employee\\NotificationsRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\NotificationsRepository.cs",
+              "RelativeToolTip": "Repositories\\Employee\\NotificationsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:32:51.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAIgAAAAAlrVmNpkrwJcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwHgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T09:41:43.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Authentication\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Services\\Authentication\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Authentication\\AuthenticationService.cs",
+              "RelativeToolTip": "Services\\Authentication\\AuthenticationService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T11:52:20.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AuthenticationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Authentication\\AuthenticationRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Authentication\\AuthenticationRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Authentication\\AuthenticationRepository.cs",
+              "RelativeToolTip": "Repositories\\Authentication\\AuthenticationRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwBkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:13:06.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "ClientManagementController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Client\\ClientManagementController.cs",
               "RelativeDocumentMoniker": "Controllers\\Client\\ClientManagementController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientManagementController.cs*",
-              "RelativeToolTip": "Controllers\\Client\\ClientManagementController.cs*",
-              "ViewState": "AgIAADwAAACAjrhuWLYtwBkAAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Client\\ClientManagementController.cs",
+              "RelativeToolTip": "Controllers\\Client\\ClientManagementController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwD8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T22:40:31.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthenticationValidationService.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationValidationService.cs",
-              "RelativeDocumentMoniker": "Services\\Authentication\\AuthenticationValidationService.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationValidationService.cs",
-              "RelativeToolTip": "Services\\Authentication\\AuthenticationValidationService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEAAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "ClientManagementService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Client\\ClientManagementService.cs",
+              "RelativeDocumentMoniker": "Services\\Client\\ClientManagementService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Client\\ClientManagementService.cs",
+              "RelativeToolTip": "Services\\Client\\ClientManagementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:53:30.999Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-08-03T22:24:16.881Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 21,
+              "Title": "AuthenticationValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Authentication\\AuthenticationValidationService.cs",
+              "RelativeDocumentMoniker": "Services\\Authentication\\AuthenticationValidationService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Authentication\\AuthenticationValidationService.cs",
+              "RelativeToolTip": "Services\\Authentication\\AuthenticationValidationService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T11:53:30.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Authentication\\AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Authentication\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "Controllers\\Authentication\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Authentication\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Authentication\\AuthenticationController.cs",
               "RelativeToolTip": "Controllers\\Authentication\\AuthenticationController.cs",
-              "ViewState": "AgIAAA4AAAAAy5orbJAlwCcAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T21:31:34.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
+              "Title": "NotificationsDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Validators\\Shared\\NotificationsDtoValidator.cs",
+              "RelativeDocumentMoniker": "Validators\\Shared\\NotificationsDtoValidator.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Validators\\Shared\\NotificationsDtoValidator.cs",
+              "RelativeToolTip": "Validators\\Shared\\NotificationsDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T22:56:39.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-20T22:18:15.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BankRevenueController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\BankRevenueController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Employee\\BankRevenueController.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\BankRevenueController.cs",
+              "RelativeToolTip": "Controllers\\Employee\\BankRevenueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T22:42:17.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TransactionsManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Client\\TransactionsManagementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Client\\TransactionsManagementController.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Client\\TransactionsManagementController.cs",
+              "RelativeToolTip": "Controllers\\Client\\TransactionsManagementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T22:41:41.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "ClientNotificationsController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientNotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Client\\ClientNotificationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\Client\\ClientNotificationsController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\ClientNotificationsController.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Client\\ClientNotificationsController.cs",
               "RelativeToolTip": "Controllers\\Client\\ClientNotificationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -251,100 +643,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TransactionsManagementController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\TransactionsManagementController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Client\\TransactionsManagementController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Client\\TransactionsManagementController.cs*",
-              "RelativeToolTip": "Controllers\\Client\\TransactionsManagementController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:41:41.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BankRevenueController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\BankRevenueController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Employee\\BankRevenueController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\BankRevenueController.cs",
-              "RelativeToolTip": "Controllers\\Employee\\BankRevenueController.cs",
+              "DocumentIndex": 54,
+              "Title": "INotificationsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Interfaces\\Repositories\\Employee\\INotificationsRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\Employee\\INotificationsRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Interfaces\\Repositories\\Employee\\INotificationsRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\Employee\\INotificationsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:42:17.531Z",
+              "WhenOpened": "2026-02-20T17:35:07.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 53,
+              "Title": "IEmployeeManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Interfaces\\Repositories\\Employee\\IEmployeeManagementRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\Employee\\IEmployeeManagementRepository.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Interfaces\\Repositories\\Employee\\IEmployeeManagementRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\Employee\\IEmployeeManagementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T17:28:40.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EmployeeNotifications.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeNotifications.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeNotifications.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeNotifications.cs",
+              "RelativeToolTip": "Models\\EmployeeModels\\EmployeeNotifications.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T10:17:53.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NotificationsTypes.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\NotificationsTypes.cs",
+              "RelativeDocumentMoniker": "Models\\Shared\\NotificationsTypes.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\NotificationsTypes.cs",
+              "RelativeToolTip": "Models\\Shared\\NotificationsTypes.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T10:18:32.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EmployeeType.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeType.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeType.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeType.cs",
+              "RelativeToolTip": "Models\\EmployeeModels\\EmployeeType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T10:17:50.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-20T17:01:42.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Employee\\StatisticsController.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\StatisticsController.cs",
+              "RelativeToolTip": "Controllers\\Employee\\StatisticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T14:38:13.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "ClientAdminController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\ClientAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\ClientAdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\ClientAdminController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\ClientAdminController.cs*",
-              "RelativeToolTip": "Controllers\\Employee\\ClientAdminController.cs*",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\ClientAdminController.cs",
+              "RelativeToolTip": "Controllers\\Employee\\ClientAdminController.cs",
               "ViewState": "AgIAAFMAAABAeMRFo9MnwF4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:42:19.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:42:19.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 32,
               "Title": "TransactionsController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\TransactionsController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\TransactionsController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\TransactionsController.cs",
               "RelativeToolTip": "Controllers\\Employee\\TransactionsController.cs",
               "ViewState": "AgIAACUAAAAAmrIGYgzwvzUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:47:53.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:47:53.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "Services\\Authentication\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Authentication\\AuthenticationService.cs",
-              "RelativeToolTip": "Services\\Authentication\\AuthenticationService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:52:20.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 34,
               "Title": "EmployeeAdminController.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\EmployeeAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\EmployeeAdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\Employee\\EmployeeAdminController.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Controllers\\Employee\\EmployeeAdminController.cs*",
-              "RelativeToolTip": "Controllers\\Employee\\EmployeeAdminController.cs*",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Controllers\\Employee\\EmployeeAdminController.cs",
+              "RelativeToolTip": "Controllers\\Employee\\EmployeeAdminController.cs",
               "ViewState": "AgIAAIcAAACAbEqBuuoiwJkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:48:40.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:48:40.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
               "Title": "TransactionsType.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsType.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\TransactionsType.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\TransactionsType.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsType.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\TransactionsType.cs",
               "RelativeToolTip": "Models\\Shared\\TransactionsType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:27.224Z"
+              "WhenOpened": "2025-08-04T10:18:27.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 36,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -352,11 +794,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 37,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAwAAABAjbIbk48swA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -364,11 +806,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 40,
               "Title": "LoginRegister.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\LoginRegister.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\LoginRegister.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\LoginRegister.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\LoginRegister.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\LoginRegister.cs",
               "RelativeToolTip": "Models\\EmployeeModels\\LoginRegister.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -376,35 +818,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EmployeeType.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeType.cs",
-              "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeType.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeType.cs",
-              "RelativeToolTip": "Models\\EmployeeModels\\EmployeeType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:50.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EmployeeNotifications.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeNotifications.cs",
-              "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeNotifications.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeNotifications.cs",
-              "RelativeToolTip": "Models\\EmployeeModels\\EmployeeNotifications.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:53.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 39,
               "Title": "EmployeeAccount.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeAccount.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeAccount.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\EmployeeAccount.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeAccount.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\EmployeeAccount.cs",
               "RelativeToolTip": "Models\\EmployeeModels\\EmployeeAccount.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -412,11 +830,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 38,
               "Title": "BankRevenue.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\BankRevenue.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\BankRevenue.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\BankRevenue.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\BankRevenue.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\BankRevenue.cs",
               "RelativeToolTip": "Models\\EmployeeModels\\BankRevenue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -424,11 +842,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 42,
               "Title": "TransferFundHistory.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransferFundHistory.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\TransferFundHistory.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\TransferFundHistory.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransferFundHistory.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\TransferFundHistory.cs",
               "RelativeToolTip": "Models\\Shared\\TransferFundHistory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -436,35 +854,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 44,
               "Title": "TransactionsHistory.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\TransactionsHistory.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\TransactionsHistory.cs",
               "RelativeToolTip": "Models\\Shared\\TransactionsHistory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:24.382Z"
+              "WhenOpened": "2025-08-04T10:18:24.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "NotificationsTypes.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\NotificationsTypes.cs",
-              "RelativeDocumentMoniker": "Models\\Shared\\NotificationsTypes.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\NotificationsTypes.cs",
-              "RelativeToolTip": "Models\\Shared\\NotificationsTypes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:32.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 52,
               "Title": "20250804102546_FirstMigration.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Migrations\\20250804102546_FirstMigration.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Migrations\\20250804102546_FirstMigration.cs",
               "RelativeDocumentMoniker": "Migrations\\20250804102546_FirstMigration.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Migrations\\20250804102546_FirstMigration.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Migrations\\20250804102546_FirstMigration.cs",
               "RelativeToolTip": "Migrations\\20250804102546_FirstMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -472,11 +879,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 41,
               "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\Notification.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\Notification.cs",
               "RelativeDocumentMoniker": "Models\\Shared\\Notification.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\Shared\\Notification.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\Shared\\Notification.cs",
               "RelativeToolTip": "Models\\Shared\\Notification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -484,23 +891,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TransactionsManagementRepository.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Employee\\TransactionsManagementRepository.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
-              "RelativeToolTip": "Repositories\\Employee\\TransactionsManagementRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:25:37.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 45,
               "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\Employee.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\EmployeeModels\\Employee.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\EmployeeModels\\Employee.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\EmployeeModels\\Employee.cs",
               "RelativeToolTip": "Models\\EmployeeModels\\Employee.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAnwAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -508,11 +903,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 49,
               "Title": "AccountDto.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\AccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dtos\\Employee\\AccountDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Employee\\AccountDto.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\AccountDto.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dtos\\Employee\\AccountDto.cs",
               "RelativeToolTip": "Dtos\\Employee\\AccountDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -520,23 +915,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ClientManagementService.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Client\\ClientManagementService.cs",
-              "RelativeDocumentMoniker": "Services\\Client\\ClientManagementService.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Client\\ClientManagementService.cs",
-              "RelativeToolTip": "Services\\Client\\ClientManagementService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:24:16.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 47,
               "Title": "EmployeeManagementService.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Employee\\EmployeeManagementService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\EmployeeManagementService.cs",
               "RelativeDocumentMoniker": "Services\\Employee\\EmployeeManagementService.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Employee\\EmployeeManagementService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\EmployeeManagementService.cs",
               "RelativeToolTip": "Services\\Employee\\EmployeeManagementService.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAAAFwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -544,47 +927,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ClientAdminRepository.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\ClientAdminRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Employee\\ClientAdminRepository.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\ClientAdminRepository.cs",
-              "RelativeToolTip": "Repositories\\Employee\\ClientAdminRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAewB8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:21:01.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "EmployeeManagementRepository.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\EmployeeManagementRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Employee\\EmployeeManagementRepository.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Repositories\\Employee\\EmployeeManagementRepository.cs",
-              "RelativeToolTip": "Repositories\\Employee\\EmployeeManagementRepository.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAewO4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:13:29.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 46,
               "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\ClientModels\\Client.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\ClientModels\\Client.cs",
               "RelativeDocumentMoniker": "Models\\ClientModels\\Client.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Models\\ClientModels\\Client.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Models\\ClientModels\\Client.cs",
               "RelativeToolTip": "Models\\ClientModels\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:08:52.216Z"
+              "WhenOpened": "2025-08-04T10:08:52.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 51,
               "Title": "EmployeesPaginatedGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
               "RelativeToolTip": "Dtos\\Employee\\EmployeesPaginatedGetDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -592,11 +952,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 48,
               "Title": "ClientAdminService.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Employee\\ClientAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\ClientAdminService.cs",
               "RelativeDocumentMoniker": "Services\\Employee\\ClientAdminService.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Services\\Employee\\ClientAdminService.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\ClientAdminService.cs",
               "RelativeToolTip": "Services\\Employee\\ClientAdminService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -604,19 +964,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 50,
               "Title": "DepositWithdrawDto.cs",
-              "DocumentMoniker": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\DepositWithdrawDto.cs",
+              "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dtos\\Employee\\DepositWithdrawDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Employee\\DepositWithdrawDto.cs",
-              "ToolTip": "C:\\Users\\TADJ TECH\\Desktop\\Nova\\Backend\\Dtos\\Employee\\DepositWithdrawDto.cs",
+              "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Dtos\\Employee\\DepositWithdrawDto.cs",
               "RelativeToolTip": "Dtos\\Employee\\DepositWithdrawDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:25:53Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "WhenOpened": "2025-08-03T22:25:53Z",
+              "EditorCaption": ""
             }
           ]
         },

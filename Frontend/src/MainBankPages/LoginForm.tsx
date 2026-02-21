@@ -42,7 +42,7 @@ export const LoginPage = () => {
     setIsLoading(true);
     try {
          await axios.post(
-        "https://novaservice-ahh3dnhqcecyetds.spaincentral-01.azurewebsites.net/api/authentication/login",
+        "http://localhost:8101/api/authentication/login",
         {
           email: formData.email,
           password: formData.password,

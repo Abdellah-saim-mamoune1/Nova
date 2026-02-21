@@ -10,6 +10,7 @@ namespace bankApI.Interfaces.RepositoriesInterfaces.Employee
     public interface IEmployeeManagementRepository
     {
         public Task<bool> AddNewEmployeeAsync(EmployeePersonDto employee);
+        public Task AddEmployeeTypeAsync(string Type);
         public Task<EmployeeGetDto?> GetEmployeeAsync(int Id);
         public Task<EmployeesPaginatedGetDto> GetAllEmployeesAsync(int PageNumber, int PageSize);
         public Task<bool> UpdateEmployeeAsync(EmployeeAccount Employee, EmployeeUpdateDto EmployeeInfo);

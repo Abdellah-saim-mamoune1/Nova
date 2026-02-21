@@ -1,0 +1,37 @@
+services:                 
+  bankdb:         
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      SA_PASSWORD: "SwN12345678"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1534:1433"
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL","/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P \"$${SA_PASSWORD}\" -Q \"SELECT 1\" || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  bankbackend:        # <-- service name
+    image: ${DOCKER_REGISTRY-}bankbackend
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080  
+      - ConnectionStrings__DefaultConnection=Server=bankdb;Database=Bankdb;User Id=sa;Password=SwN12345678;TrustServerCertificate=True
+    depends_on:
+      bankdb:
+        condition: service_healthy
+    ports:
+      - "8101:8080"
+
+      
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"

@@ -1,6 +1,7 @@
 ﻿using bankApI.BusinessLayer.Dto_s.ClientDto_s;
 using bankApI.Data;
 using bankApI.Interfaces.RepositoriesInterfaces.Employee;
+using bankApI.Models.ClientXEmployeeModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace bankApI.Repositories.Employee
@@ -33,6 +34,15 @@ namespace bankApI.Repositories.Employee
                 TotalPages = (int)Math.Ceiling((float)AllNotifications.Count() / PageSize) };
 
         }
+
+
+        public async Task AddNotificationType(string Type)
+        {
+            Context.NotificationsTypes.Add(new NotificationsTypes { Name = Type });
+            await Context.SaveChangesAsync();
+        }
+
+
         public async Task<bool> MarkAsViewed(int NotificationId, int EmployeeId)
         {
             try

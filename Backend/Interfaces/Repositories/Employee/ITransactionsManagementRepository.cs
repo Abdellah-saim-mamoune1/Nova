@@ -11,5 +11,6 @@ namespace bankApI.Interfaces.Repositories.Employee
         public Task<ClientsTransactionsHistoryPaginatedGetDto?> GetTransactionsHistoryPaginatedAsync(int ClientId, int PageNumber, int PageSize);
         public Task<int> Deposit(DepositWithdrawDto form);
         public Task<int> Withdraw(DepositWithdrawDto form);
+        public Task AddTransactionsTypes(string type);
     }
 }

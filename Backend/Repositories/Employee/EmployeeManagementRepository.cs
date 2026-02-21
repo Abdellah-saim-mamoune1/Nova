@@ -49,6 +49,13 @@ namespace bankApI.Repositories.EmployeeRepositories
 
         }
 
+        public async Task AddEmployeeTypeAsync(string Type)
+        {
+             _db.EmployeeType.Add(new EmployeeType { Type = Type });
+             await _db.SaveChangesAsync();
+
+        }
+
         async public Task<EmployeeGetDto?> GetEmployeeAsync(int Id)
         {
             if (_cache.TryGetValue($"Employee_{Id}", out EmployeeGetDto? employee))
