@@ -45,13 +45,13 @@ Finally after login to the system as an amployee or as a client, you will be abl
 
 
 ## Screenshots
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot114.png)
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot115.png)
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot116.png)
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot117.png)
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot118.png)
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot119.png)
-![Dashboard Screenshot](./Frontend/Public/Assets/Screenshot120.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot114.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot115.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot116.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot117.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot118.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot119.png)
+![Dashboard Screenshot](./Frontend/public/Assets/Screenshot120.png)
 
 ## Features
  User login & JWT authentication
