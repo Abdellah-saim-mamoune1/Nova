@@ -23,26 +23,31 @@ useEffect(()=>{
 
   if(Transactions===null||Transactions.transfers.length===0){
     
-    return( <div className="w-full dark:text-gray-100 h-full flex-col flex justify-center">
-      
-      <div className="dark:bg-gray-800 mx-auto bg-white p-4 px-7 rounded-lg shadow-md">
+   return (
+  <div className="w-full dark:text-gray-100 h-full flex-col flex justify-center">
+    <div className="dark:bg-gray-800 bg-white p-4 px-7 rounded-lg shadow-md">
       <h2 className="text-xl font-semibold mb-4">Transfers History</h2>
-      
+
       <div className="overflow-x-auto">
         <table className="min-w-full dark:border-gray-600 table-auto border-collapse border border-gray-300">
           <thead>
-            <tr className="dark:bg-gray-900 dark:text-blue-400 dark:border-b-gray-600  text-gray-700 border-b border-gray-300 bg-gray-200">
-              <th className=" px-4 py-2 text-left">Id</th>
-              <th className=" px-4 py-2 text-left">Amount</th>
-              <th className=" px-4 py-2 text-left">Type</th>          
-              <th className=" px-4 py-2 text-left">Date</th>
-           
+            <tr className="dark:bg-gray-900 dark:text-blue-400 dark:border-b-gray-600 text-gray-700 border-b border-gray-300 bg-gray-200">
+              <th className="px-4 py-2 text-left">Id</th>
+              <th className="px-4 py-2 text-left">Sender Account</th>
+              <th className="px-4 py-2 text-left">Recipient Account</th>
+              <th className="px-4 py-2 text-left">Amount</th>
+              <th className="px-4 py-2 text-left">Date</th>
             </tr>
           </thead>
+
+          <tbody>
+          
+          </tbody>
         </table>
       </div>
-      </div>
-    </div>);
+    </div>
+  </div>
+);
   }
 
 
@@ -60,7 +65,7 @@ useEffect(()=>{
     
     <div className="w-full dark:text-gray-100 h-full flex-col flex justify-center">
     <div className="dark:bg-gray-800 bg-white p-4 px-7 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4">Transactions History</h2>
+      <h2 className="text-xl font-semibold mb-4">Transfers History</h2>
       
       <div className="overflow-x-auto">
         <table className="min-w-full dark:border-gray-600 table-auto border-collapse border border-gray-300">

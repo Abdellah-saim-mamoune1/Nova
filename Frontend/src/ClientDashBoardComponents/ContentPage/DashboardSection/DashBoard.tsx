@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { TransactionsTable } from "../Others/Table";
-import { TransactionsChart } from "./Transactionschart";
 import { useAppSelector } from "../../../features/Slices/hooks";
 import AccountBalancePieChart from "./AnimatedProgressProvider";
 import { LoadingCircle } from "../../../SharedComponents/LoadingCircle";
@@ -122,7 +121,7 @@ return(
 
       {/* Table & Chart */}
       <TransactionsTable />
-      <TransactionsChart />
+ 
     </div>
   );
 }

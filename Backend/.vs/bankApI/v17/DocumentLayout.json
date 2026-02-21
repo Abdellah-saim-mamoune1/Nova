@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\db_samples\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:db_samples\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\employee\\transactionsmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:repositories\\employee\\transactionsmanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\employee\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\db_samples\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:db_samples\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\repositories\\client\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\db_samples\\sample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:db_samples\\sample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\employee\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|solutionrelative:services\\employee\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90875584-1D03-4CC8-A8F6-3C548445AC46}|bankApI.csproj|c:\\users\\x395\\documents\\projects\\bankproject\\nova\\backend\\services\\client\\transactionsmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -234,7 +234,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 304,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -274,8 +274,7 @@
               "RelativeToolTip": "Services\\Client\\TransactionsManagementService.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T00:34:11.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T00:34:11.273Z"
             },
             {
               "$type": "Document",
@@ -287,18 +286,17 @@
               "RelativeToolTip": "Interfaces\\Repositories\\Employee\\ITransactionsManagementRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T00:32:52.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T00:32:52.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "TransactionsService.cs",
               "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\TransactionsService.cs",
               "RelativeDocumentMoniker": "Services\\Employee\\TransactionsService.cs",
               "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Services\\Employee\\TransactionsService.cs",
               "RelativeToolTip": "Services\\Employee\\TransactionsService.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-21T00:27:48.785Z",
               "EditorCaption": ""
@@ -313,12 +311,11 @@
               "RelativeToolTip": "Repositories\\Shared\\ClientInfoGetRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAuwBcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:29:47.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:29:47.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Sample.cs",
               "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Sample.cs",
               "RelativeDocumentMoniker": "db_samples\\Sample.cs",
@@ -326,8 +323,7 @@
               "RelativeToolTip": "db_samples\\Sample.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAQwI0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:18:00.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:18:00.239Z"
             },
             {
               "$type": "Document",
@@ -339,38 +335,37 @@
               "RelativeToolTip": "Repositories\\Employee\\ClientAdminRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:21:01.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:21:01.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Seeder.cs",
               "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Seeder.cs",
               "RelativeDocumentMoniker": "db_samples\\Seeder.cs",
               "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\db_samples\\Seeder.cs",
               "RelativeToolTip": "db_samples\\Seeder.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowEIAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T17:17:38.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TransactionsManagementRepository.cs",
               "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Employee\\TransactionsManagementRepository.cs",
               "ToolTip": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Employee\\TransactionsManagementRepository.cs",
               "RelativeToolTip": "Repositories\\Employee\\TransactionsManagementRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAgwPsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T22:25:37.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TransactionsRepository.cs",
               "DocumentMoniker": "C:\\Users\\x395\\Documents\\Projects\\BankProject\\Nova\\Backend\\Repositories\\Client\\TransactionsRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Client\\TransactionsRepository.cs",
@@ -378,8 +373,7 @@
               "RelativeToolTip": "Repositories\\Client\\TransactionsRepository.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAowFwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:37:47.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:37:47.084Z"
             },
             {
               "$type": "Document",
@@ -391,8 +385,7 @@
               "RelativeToolTip": "Repositories\\Employee\\StatisticsRepository.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:37:06.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:37:06.485Z"
             },
             {
               "$type": "Document",
@@ -404,8 +397,7 @@
               "RelativeToolTip": "Repositories\\Employee\\BankRevenueManagementRepository.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:18:19.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:18:19.418Z"
             },
             {
               "$type": "Document",
@@ -417,8 +409,7 @@
               "RelativeToolTip": "Repositories\\Client\\ClientManagementRepository.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAowGoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:12:02.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:12:02.756Z"
             },
             {
               "$type": "Document",
@@ -430,8 +421,7 @@
               "RelativeToolTip": "Repositories\\Client\\NotificationsRepository.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:38:00.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:38:00.927Z"
             },
             {
               "$type": "Document",
@@ -443,8 +433,7 @@
               "RelativeToolTip": "Repositories\\Client\\StatisticsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:37:58.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:37:58.817Z"
             },
             {
               "$type": "Document",
@@ -456,8 +445,7 @@
               "RelativeToolTip": "Repositories\\Employee\\EmployeeManagementRepository.cs",
               "ViewState": "AgIAAC4BAAAAAAAAAADwvxgAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:13:29.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:13:29.11Z"
             },
             {
               "$type": "Document",
@@ -469,8 +457,7 @@
               "RelativeToolTip": "Services\\Shared\\ClientInfoGetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T23:29:05.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T23:29:05.622Z"
             },
             {
               "$type": "Document",
@@ -482,8 +469,7 @@
               "RelativeToolTip": "Repositories\\Employee\\NotificationsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:32:51.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:32:51.221Z"
             },
             {
               "$type": "Document",
@@ -495,8 +481,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAIwHgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T09:41:43.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T09:41:43.578Z"
             },
             {
               "$type": "Document",
@@ -508,8 +493,7 @@
               "RelativeToolTip": "Services\\Authentication\\AuthenticationService.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:52:20.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T11:52:20.683Z"
             },
             {
               "$type": "Document",
@@ -521,8 +505,7 @@
               "RelativeToolTip": "Repositories\\Authentication\\AuthenticationRepository.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAgwBkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:13:06.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:13:06.746Z"
             },
             {
               "$type": "Document",
@@ -534,8 +517,7 @@
               "RelativeToolTip": "Controllers\\Client\\ClientManagementController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAIwD8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:40:31.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:40:31.369Z"
             },
             {
               "$type": "Document",
@@ -547,8 +529,7 @@
               "RelativeToolTip": "Services\\Client\\ClientManagementService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:24:16.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:24:16.881Z"
             },
             {
               "$type": "Document",
@@ -560,8 +541,7 @@
               "RelativeToolTip": "Services\\Authentication\\AuthenticationValidationService.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAkwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:53:30.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T11:53:30.999Z"
             },
             {
               "$type": "Document",
@@ -573,8 +553,7 @@
               "RelativeToolTip": "Controllers\\Authentication\\AuthenticationController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwDYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:31:34.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:31:34.292Z"
             },
             {
               "$type": "Document",
@@ -586,8 +565,7 @@
               "RelativeToolTip": "Validators\\Shared\\NotificationsDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T22:56:39.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T22:56:39.446Z"
             },
             {
               "$type": "Document",
@@ -599,8 +577,7 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-20T22:18:15.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T22:18:15.538Z"
             },
             {
               "$type": "Document",
@@ -612,8 +589,7 @@
               "RelativeToolTip": "Controllers\\Employee\\BankRevenueController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:42:17.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:42:17.531Z"
             },
             {
               "$type": "Document",
@@ -625,8 +601,7 @@
               "RelativeToolTip": "Controllers\\Client\\TransactionsManagementController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:41:41.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:41:41.872Z"
             },
             {
               "$type": "Document",
@@ -638,8 +613,7 @@
               "RelativeToolTip": "Controllers\\Client\\ClientNotificationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:48:35.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T21:48:35.349Z"
             },
             {
               "$type": "Document",
@@ -651,8 +625,7 @@
               "RelativeToolTip": "Interfaces\\Repositories\\Employee\\INotificationsRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:35:07.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:35:07.514Z"
             },
             {
               "$type": "Document",
@@ -664,8 +637,7 @@
               "RelativeToolTip": "Interfaces\\Repositories\\Employee\\IEmployeeManagementRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T17:28:40.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:28:40.492Z"
             },
             {
               "$type": "Document",
@@ -677,8 +649,7 @@
               "RelativeToolTip": "Models\\EmployeeModels\\EmployeeNotifications.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:53.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:17:53.506Z"
             },
             {
               "$type": "Document",
@@ -690,8 +661,7 @@
               "RelativeToolTip": "Models\\Shared\\NotificationsTypes.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:32.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:32.649Z"
             },
             {
               "$type": "Document",
@@ -703,8 +673,7 @@
               "RelativeToolTip": "Models\\EmployeeModels\\EmployeeType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:17:50.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:17:50.724Z"
             },
             {
               "$type": "Document",
@@ -716,8 +685,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-20T17:01:42.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T17:01:42.816Z"
             },
             {
               "$type": "Document",
@@ -777,8 +745,7 @@
               "RelativeToolTip": "Models\\Shared\\TransactionsType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:27.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:27.224Z"
             },
             {
               "$type": "Document",
@@ -862,8 +829,7 @@
               "RelativeToolTip": "Models\\Shared\\TransactionsHistory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:18:24.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:18:24.382Z"
             },
             {
               "$type": "Document",
@@ -935,8 +901,7 @@
               "RelativeToolTip": "Models\\ClientModels\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T10:08:52.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T10:08:52.216Z"
             },
             {
               "$type": "Document",
@@ -972,8 +937,7 @@
               "RelativeToolTip": "Dtos\\Employee\\DepositWithdrawDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:25:53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:25:53Z"
             }
           ]
         },
