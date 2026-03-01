@@ -1,4 +1,4 @@
-# 📚 Nova
+# Nova
 
 **Nova** is a full-stack web banking application Built with React, Tailwind CSS, and ASP.NET Core Web API.
 
