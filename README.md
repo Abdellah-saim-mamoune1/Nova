@@ -45,6 +45,10 @@ Finally after login to the system as an amployee or as a client, you will be abl
 
 
 ## Screenshots
+
+![db_diagram Screenshot](db_diagram.png)
+
+
 ![Dashboard Screenshot](./Frontend/public/Assets/Screenshot114.png)
 ![Dashboard Screenshot](./Frontend/public/Assets/Screenshot115.png)
 ![Dashboard Screenshot](./Frontend/public/Assets/Screenshot116.png)
